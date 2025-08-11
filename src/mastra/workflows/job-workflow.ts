@@ -50,10 +50,14 @@ function parseJsonWithSchema<TSchema extends z.ZodType<unknown>>(
       return parsed.data as z.infer<TSchema>;
     }
   } catch {
-    // ignore parse errors and return schema default
+    // ignore parse errors and fall through to fallback
   }
-  // Fallback to empty object parsed through schema (assumes root is partial)
-  return schema.parse({}) as z.infer<TSchema>;
+
+  // Log the error and let the calling function handle it
+  console.log(
+    `Failed to parse JSON with schema. Original text: ${text.substring(0, 200)}...`
+  );
+  throw new Error('JSON parsing failed');
 }
 
 const parseJobTool = createTool({
@@ -62,8 +66,13 @@ const parseJobTool = createTool({
   inputSchema: z.object({ rawText: z.string() }),
   outputSchema: basicJobDetailsSchema,
   execute: async ({ context }, _options) => {
-    const result = await jobParserAgent.generate(context.rawText);
-    return parseJsonWithSchema(result.text, basicJobDetailsSchema);
+    try {
+      const result = await jobParserAgent.generate(context.rawText);
+      return parseJsonWithSchema(result.text, basicJobDetailsSchema);
+    } catch (error) {
+      console.log('Error in parse job:', error);
+      return { company: 'Unknown Company' }; // Return minimal valid object
+    }
   },
 });
 
@@ -75,10 +84,15 @@ const newsResearchTool = createTool({
   inputSchema: basicJobDetailsSchema,
   outputSchema: newsSchema,
   execute: async ({ context }, _options) => {
-    const companyName = context.company || 'Unknown Company';
-    console.log('🚀 ~ companyName:', companyName);
-    const result = await newsAgent.generate(companyName);
-    return parseJsonWithSchema(result.text, newsSchema);
+    try {
+      const companyName = context.company || 'Unknown Company';
+      console.log('🚀 ~ companyName:', companyName);
+      const result = await newsAgent.generate(companyName);
+      return parseJsonWithSchema(result.text, newsSchema);
+    } catch (error) {
+      console.log('Error in news research:', error);
+      return {}; // Return empty object, will be handled by workflow
+    }
   },
 });
 
@@ -90,9 +104,14 @@ const leadershipResearchTool = createTool({
   inputSchema: basicJobDetailsSchema,
   outputSchema: leadershipResearchSchema,
   execute: async ({ context }, _options) => {
-    const companyName = context.company || 'Unknown Company';
-    const result = await leadershipAgent.generate(companyName);
-    return parseJsonWithSchema(result.text, leadershipResearchSchema);
+    try {
+      const companyName = context.company || 'Unknown Company';
+      const result = await leadershipAgent.generate(companyName);
+      return parseJsonWithSchema(result.text, leadershipResearchSchema);
+    } catch (error) {
+      console.log('Error in leadership research:', error);
+      return {};
+    }
   },
 });
 
@@ -104,9 +123,14 @@ const financialResearchTool = createTool({
   inputSchema: basicJobDetailsSchema,
   outputSchema: financialResearchSchema,
   execute: async ({ context }, _options) => {
-    const companyName = context.company || 'Unknown Company';
-    const result = await financialsAgent.generate(companyName);
-    return parseJsonWithSchema(result.text, financialResearchSchema);
+    try {
+      const companyName = context.company || 'Unknown Company';
+      const result = await financialsAgent.generate(companyName);
+      return parseJsonWithSchema(result.text, financialResearchSchema);
+    } catch (error) {
+      console.log('Error in financial research:', error);
+      return {};
+    }
   },
 });
 
@@ -118,9 +142,14 @@ const socialMediaResearchTool = createTool({
   inputSchema: basicJobDetailsSchema,
   outputSchema: socialMediaResearchSchema,
   execute: async ({ context }, _options) => {
-    const companyName = context.company || 'Unknown Company';
-    const result = await socialMediaAgent.generate(companyName);
-    return parseJsonWithSchema(result.text, socialMediaResearchSchema);
+    try {
+      const companyName = context.company || 'Unknown Company';
+      const result = await socialMediaAgent.generate(companyName);
+      return parseJsonWithSchema(result.text, socialMediaResearchSchema);
+    } catch (error) {
+      console.log('Error in social media research:', error);
+      return {};
+    }
   },
 });
 
@@ -132,9 +161,14 @@ const employeeResearchTool = createTool({
   inputSchema: basicJobDetailsSchema,
   outputSchema: employeeResearchSchema,
   execute: async ({ context }, _options) => {
-    const companyName = context.company || 'Unknown Company';
-    const result = await employeeAgent.generate(companyName);
-    return parseJsonWithSchema(result.text, employeeResearchSchema);
+    try {
+      const companyName = context.company || 'Unknown Company';
+      const result = await employeeAgent.generate(companyName);
+      return parseJsonWithSchema(result.text, employeeResearchSchema);
+    } catch (error) {
+      console.log('Error in employee research:', error);
+      return {};
+    }
   },
 });
 
@@ -146,9 +180,14 @@ const technologyResearchTool = createTool({
   inputSchema: basicJobDetailsSchema,
   outputSchema: technologyResearchSchema,
   execute: async ({ context }, _options) => {
-    const companyName = context.company || 'Unknown Company';
-    const result = await technologyAgent.generate(companyName);
-    return parseJsonWithSchema(result.text, technologyResearchSchema);
+    try {
+      const companyName = context.company || 'Unknown Company';
+      const result = await technologyAgent.generate(companyName);
+      return parseJsonWithSchema(result.text, technologyResearchSchema);
+    } catch (error) {
+      console.log('Error in technology research:', error);
+      return {};
+    }
   },
 });
 
@@ -160,9 +199,14 @@ const marketResearchTool = createTool({
   inputSchema: basicJobDetailsSchema,
   outputSchema: marketResearchSchema,
   execute: async ({ context }, _options) => {
-    const companyName = context.company || 'Unknown Company';
-    const result = await marketAgent.generate(companyName);
-    return parseJsonWithSchema(result.text, marketResearchSchema);
+    try {
+      const companyName = context.company || 'Unknown Company';
+      const result = await marketAgent.generate(companyName);
+      return parseJsonWithSchema(result.text, marketResearchSchema);
+    } catch (error) {
+      console.log('Error in market research:', error);
+      return {};
+    }
   },
 });
 
@@ -174,9 +218,14 @@ const companyCultureResearchTool = createTool({
   inputSchema: synthesisSchema,
   outputSchema: companyCultureSchema,
   execute: async ({ context }, _options) => {
-    const prompt = `Research company culture based on this synthesis: ${context.report}`;
-    const result = await companyCultureAgent.generate(prompt);
-    return parseJsonWithSchema(result.text, companyCultureSchema);
+    try {
+      const prompt = `Research company culture based on this synthesis: ${context.report}`;
+      const result = await companyCultureAgent.generate(prompt);
+      return parseJsonWithSchema(result.text, companyCultureSchema);
+    } catch (error) {
+      console.log('Error in company culture research:', error);
+      return {};
+    }
   },
 });
 
@@ -190,9 +239,14 @@ const hiringManagerResearchTool = createTool({
   inputSchema: synthesisSchema,
   outputSchema: hiringManagerSchema,
   execute: async ({ context }, _options) => {
-    const prompt = `Research hiring manager and team based on this synthesis: ${context.report}`;
-    const result = await hiringManagerAgent.generate(prompt);
-    return parseJsonWithSchema(result.text, hiringManagerSchema);
+    try {
+      const prompt = `Research hiring manager and team based on this synthesis: ${context.report}`;
+      const result = await hiringManagerAgent.generate(prompt);
+      return parseJsonWithSchema(result.text, hiringManagerSchema);
+    } catch (error) {
+      console.log('Error in hiring manager research:', error);
+      return {};
+    }
   },
 });
 
@@ -204,9 +258,14 @@ const roleSuccessResearchTool = createTool({
   inputSchema: synthesisSchema,
   outputSchema: roleSuccessCriteriaSchema,
   execute: async ({ context }, _options) => {
-    const prompt = `Research role success criteria based on this synthesis: ${context.report}`;
-    const result = await roleSuccessAgent.generate(prompt);
-    return parseJsonWithSchema(result.text, roleSuccessCriteriaSchema);
+    try {
+      const prompt = `Research role success criteria based on this synthesis: ${context.report}`;
+      const result = await roleSuccessAgent.generate(prompt);
+      return parseJsonWithSchema(result.text, roleSuccessCriteriaSchema);
+    } catch (error) {
+      console.log('Error in role success research:', error);
+      return {};
+    }
   },
 });
 
@@ -218,9 +277,14 @@ const customerInsightsResearchTool = createTool({
   inputSchema: synthesisSchema,
   outputSchema: customerInsightsSchema,
   execute: async ({ context }, _options) => {
-    const prompt = `Research customer insights based on this synthesis: ${context.report}`;
-    const result = await customerInsightsAgent.generate(prompt);
-    return parseJsonWithSchema(result.text, customerInsightsSchema);
+    try {
+      const prompt = `Research customer insights based on this synthesis: ${context.report}`;
+      const result = await customerInsightsAgent.generate(prompt);
+      return parseJsonWithSchema(result.text, customerInsightsSchema);
+    } catch (error) {
+      console.log('Error in customer insights research:', error);
+      return {};
+    }
   },
 });
 
@@ -234,9 +298,14 @@ const personalizationResearchTool = createTool({
   inputSchema: synthesisSchema,
   outputSchema: personalizationSchema,
   execute: async ({ context }, _options) => {
-    const prompt = `Research personalization opportunities based on this synthesis: ${context.report}`;
-    const result = await personalizationAgent.generate(prompt);
-    return parseJsonWithSchema(result.text, personalizationSchema);
+    try {
+      const prompt = `Research personalization opportunities based on this synthesis: ${context.report}`;
+      const result = await personalizationAgent.generate(prompt);
+      return parseJsonWithSchema(result.text, personalizationSchema);
+    } catch (error) {
+      console.log('Error in personalization research:', error);
+      return {};
+    }
   },
 });
 
