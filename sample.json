@@ -1,0 +1,2778 @@
+{
+  "runId": "0fd4386f-4843-46b3-b83f-b81896559143",
+  "eventTimestamp": "2025-08-11T09:45:25.415Z",
+  "payload": {
+    "workflowState": {
+      "status": "success",
+      "steps": {
+        "Parse Job": {
+          "id": "Parse Job",
+          "stepCallId": "d12001f4-0c8f-47cc-ac8b-ded0bfecb1b5",
+          "payload": {
+            "rawText": "0 notifications total Expedia Group logo Expedia Group Share Show more options Software Development Engineer III  Austin, TX · 4 days ago · Over 100 people clicked apply Promoted by hirer · Responses managed off LinkedIn    $137.5K/yr - $192.5K/yr Matches your job preferences, minimum pay preference is 170000.   On-site Matches your job preferences, workplace type is On-site.   Full-time Matches your job preferences, job type is Full-time.  Apply  Save Save Software Development Engineer III  at Expedia Group About the job Expedia Group brands power global travel for everyone, everywhere. We design cutting-edge tech to make travel smoother and more memorable, and we create groundbreaking solutions for our partners. Our diverse, vibrant, and welcoming community is essential in driving our success.  Why Join Us?  To shape the future of travel, people must come first. Guided by our Values and Leadership Agreements, we foster an open culture where everyone belongs, differences are celebrated and know that when one of us wins, we all win.  We provide a full benefits package, including exciting travel perks, generous time-off, parental leave, a flexible work model (with some pretty cool offices), and career development resources, all to fuel our employees' passion for travel and ensure a rewarding career journey. We’re building a more open world. Join us.  Software Development Engineer III   As a global leader in travel, Expedia Group helps millions of people every day go places and build lifelong memories. Marketplace Trust is a critical area of our business focused on making the experience for our customers and partners simple and easy to navigate while also driving the right marketplace behaviors and addressing experiences that are counter to building trust.  We are a data-driven organization with an appetite to resolve the most difficult problems. If you are interested in being near the heart of the company - where the needs of travelers, partners, and the business intersect - than this position is for you!  We utilize every data signal in the marketplace to build scalable and extensible systems to maximize positive outcomes across the platform. Our team is looking for excellent engineers who are highly collaborative and broad-minded problem solvers willing to build end-to-end solutions that enable the most trusted travel marketplace in the world.  In This Role, You Will  Develop, debug, test, and document components of software applications and tools Apply software design principles, data structures and/or design patterns and computer science fundamentals to write code that is clean, maintainable, optimized, modular with good naming conventions Deconstruct large, complex problems into manageable and achievable milestones driving streamlined execution by the team, actively participating in code and design reviews Provide technical guidance and mentoring to peers and more junior engineers, helping them overcome obstacles and have growth opportunities Team up with peers across the organization to build an understanding of cross dependencies and shared problem-solving Apply formal training methods to current workload and comfortable asking questions and challenging the status quo Take advantage of opportunities to build new technical expertise in a specific engineering area, seeking knowledge from domain specialists when needed Technologies we use: Java, Kotlin, Scala, Dropwizard, Spring, Node.js, React, GraphQL, Docker, Kafka, Cassandra, MongoDB, Hadoop, Qubole, Spark, DataDog, Splunk, AWS cloud  Experience And Qualifications  Bachelor's or Master's degree in Computer Science, Software Engineering, or related field; or equivalent related professional experience 5+ years of experience in backend software development with a focus on scalable, distributed systems  Professional, post-college software development in object-oriented language Collaborative approach within and outside of your teams and strong interpersonal skills Eagerly share your knowledge and expertise, hungry to learn (and admit) what you don't know Demonstrated ability to select among technology options to implement and resolve for need in designing and building complex systems Commitment to technical excellence Experience building on cloud infrastructure (AWS preferred) with sound architectural patterns and scalable, cost-efficient production quality systems Embrace change, always open to replacing what you built yesterday with something better today  Please note that this role is only available in the following locations: Austin, in alignment with our flexible work model which requires employees to be in-office at least three days a week.  The total cash range for this position in Austin is $137,500.00 to $192,500.00. Employees in this role have the potential to increase their pay up to $220,000.00, which is the top of the range, based on ongoing, demonstrated, and sustained performance in the role.  Starting pay for this role will vary based on multiple factors, including location, available budget, and an individual’s knowledge, skills, and experience. Pay ranges may be modified in the future.  Expedia Group is proud to offer a wide range of benefits to support employees and their families, including medical/dental/vision, paid time off, and an Employee Assistance Program. To fuel each employee’s passion for travel, we offer a wellness & travel reimbursement, travel discounts, and an International Airlines Travel Agent (IATAN) membership. View our full list of benefits.  Accommodation requests  If you need assistance with any part of the application or recruiting process due to a disability, or other physical or mental health conditions, please reach out to our Recruiting Accommodations Team through the Accommodation Request.  We are proud to be named as a Best Place to Work on Glassdoor in 2024 and be recognized for award-winning culture by organizations like Forbes, TIME, Disability:IN, and others.  Expedia Group's family of brands includes: Brand Expedia®, Hotels.com®, Expedia® Partner Solutions, Vrbo®, trivago®, Orbitz®, Travelocity®, Hotwire®, Wotif®, ebookers®, CheapTickets®, Expedia Group™ Media Solutions, Expedia Local Expert®, CarRentals.com™, and Expedia Cruises™. © 2024 Expedia, Inc. All rights reserved. Trademarks and logos are the property of their respective owners. CST: 2029030-50  Employment opportunities and job offers at Expedia Group will always come from Expedia Group’s Talent Acquisition and hiring teams. Never provide sensitive, personal information to someone unless you’re confident who the recipient is. Expedia Group does not extend job offers via email or any other messaging tools to individuals with whom we have not made prior contact. Our email domain is @expediagroup.com. The official website to find and apply for job openings at Expedia Group is careers.expediagroup.com/jobs.  Expedia is committed to creating an inclusive work environment with a diverse workforce. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status. This employer participates in E-Verify. The employer will provide the Social Security Administration (SSA) and, if necessary, the Department of Homeland Security (DHS) with information from each new employee's I-9 to confirm work authorization.   See more About the company Expedia Group company logo Expedia Group 852,237 followers  Follow Software Development  10,001+ employees  22,853 on LinkedIn At Expedia Group (NASDAQ: EXPE), we believe travel is a force for good – it opens minds, builds connections, and bridges divides. We create transformative tech that enables unforgettable experiences for all travelers, everywhere. Our trusted family of brands are known and loved by millions, and we power more trips than ​anyone else.​ To learn more about our vision of a more open world through travel, visit www.expediagroup.com.  We’re committed to providing an inclusive and accessible recruiting experience for candidates with disabilities, or other physical or mental health conditions. If you require an accommodation or adjustment for any part of the application or recruitment process, please let us know by completing our Accommodation Request Form or contacting your recruiter.  Employment opportunities and job offers at Expedia Group will always come from Expedia Group’s Talent Acquisition and hiring teams. Never provide sensitive, personal information to someone unless you’re confident about who they are. We do not send job offers via email, or any other messaging tools, to individuals we have not had prior contact with. Our email domain is @expediagroup.com. Our official careers website, where you can to find and apply for job openings, is careers.expediagroup.com/jobs.  If you require customer service support to cancel, change or ask about a refund for your trip, you can connect with our 24/7 Virtual Agent through the following links: Expedia: https://www.expedia.com/helpcenter Hotels.com: https://service.hotels.com/en-us/ Vrbo: https://help.vrbo.com/ For additional assistance, direct message us on Twitter @ExpediaHelp with your itinerary number and email address: https://twitter.com/ExpediaHelp … show more  Commitments  Career growth and learning We empower every Expedian to achieve their full potential by providing the tools they need to learn, evolve, and create a rich and fulfilling career. Our Career Hub provides a one-stop-shop for development resources, while our Gig and Mentoring programs unlock bespoke learning opportunities across the company. … Show more Diversity, equity, and inclusion At Expedia Group, we cultivate an open culture where every voice matters, and everyone belongs. Inclusion and Diversity are more than just words to us: we take intentional and measurable steps to put them at the heart of what we do. The result is an open, positive, and equitable working environment, where everyone can feel safe and empowered. … Show more Environmental sustainability As one of the most trusted names in global travel, we use our influence to encourage our partners and peers to innovate towards a more sustainable travel ecosystem. We also empower travelers to act sustainably by providing transparent information about the impacts of their choices, and offering more eco-conscious travel options. … Show more Social impact We empower more communities, small businesses, and individuals to benefit from the opportunities the travel industry brings, while inspiring our partners and peers to innovate towards a more sustainable travel ecosystem. Our reach is global, but we have a local impact, too: we encourage Expedians to make a difference in the communities where they live and work through our Global Day of Caring and our Volunteer Hour Matching scheme. … Show more Work-life balance We go the extra mile to help Expedians and their families stay healthy, happy, and well. We support caregivers of all stripes through parental, maternity, and adoption leave, and we even offer pet-related perks to cater to furry family members. Our hybrid working policy lets us stay connected to each other while enjoying the benefits of working from home. Plus, travel and wellness grants, discounts, and reimbursements help Expedians do what they love best: travel. … Show more Learn more Show more"
+          },
+          "startedAt": 1754905468513,
+          "status": "success",
+          "output": {
+            "jobTitle": "Software Development Engineer III",
+            "jobDescription": "As a global leader in travel, Expedia Group helps millions of people every day go places and build lifelong memories. Marketplace Trust is a critical area of our business focused on making the experience for our customers and partners simple and easy to navigate while also driving the right marketplace behaviors and addressing experiences that are counter to building trust. This role involves developing, debugging, testing, and documenting components of software applications, mentoring junior engineers, and collaborating across teams to build end-to-end solutions. You'll utilize technologies like Java, Kotlin, Scala, and more to maximize positive outcomes across the platform.",
+            "company": "Expedia Group",
+            "industry": "Travel Technology",
+            "department": "Software Development",
+            "jobFunction": "Software Development",
+            "location": "Austin, TX",
+            "remotePolicy": "on-site",
+            "postedDate": "4 days ago",
+            "payRange": "$137.5K/yr - $192.5K/yr",
+            "benefitsPackage": "Full benefits package including medical/dental/vision, paid time off, wellness & travel reimbursement, travel discounts, and an Employee Assistance Program.",
+            "employmentType": "Full-time",
+            "experienceLevel": "Mid-Senior Level",
+            "yearsExperience": "5+ years",
+            "educationRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or related field; or equivalent related professional experience",
+            "requiredSkills": [
+              "Backend software development",
+              "Scalable systems",
+              "Java",
+              "Kotlin",
+              "Scala",
+              "Spring",
+              "Node.js",
+              "React",
+              "AWS cloud",
+              "Collaboration",
+              "Technical guidance and mentoring",
+              "Problem-solving",
+              "Data structures and design patterns"
+            ]
+          },
+          "endedAt": 1754905475356
+        },
+        "News Research": {
+          "id": "News Research",
+          "stepCallId": "72dbff29-ec71-4ed8-baa7-8aeec29d12f5",
+          "payload": {
+            "jobTitle": "Software Development Engineer III",
+            "jobDescription": "As a global leader in travel, Expedia Group helps millions of people every day go places and build lifelong memories. Marketplace Trust is a critical area of our business focused on making the experience for our customers and partners simple and easy to navigate while also driving the right marketplace behaviors and addressing experiences that are counter to building trust. This role involves developing, debugging, testing, and documenting components of software applications, mentoring junior engineers, and collaborating across teams to build end-to-end solutions. You'll utilize technologies like Java, Kotlin, Scala, and more to maximize positive outcomes across the platform.",
+            "company": "Expedia Group",
+            "industry": "Travel Technology",
+            "department": "Software Development",
+            "jobFunction": "Software Development",
+            "location": "Austin, TX",
+            "remotePolicy": "on-site",
+            "postedDate": "4 days ago",
+            "payRange": "$137.5K/yr - $192.5K/yr",
+            "benefitsPackage": "Full benefits package including medical/dental/vision, paid time off, wellness & travel reimbursement, travel discounts, and an Employee Assistance Program.",
+            "employmentType": "Full-time",
+            "experienceLevel": "Mid-Senior Level",
+            "yearsExperience": "5+ years",
+            "educationRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or related field; or equivalent related professional experience",
+            "requiredSkills": [
+              "Backend software development",
+              "Scalable systems",
+              "Java",
+              "Kotlin",
+              "Scala",
+              "Spring",
+              "Node.js",
+              "React",
+              "AWS cloud",
+              "Collaboration",
+              "Technical guidance and mentoring",
+              "Problem-solving",
+              "Data structures and design patterns"
+            ]
+          },
+          "startedAt": 1754905475357,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "recentArticles": [
+              {
+                "title": "Expedia's New Approach to Sustainability in Travel",
+                "source": "Travel Weekly",
+                "date": "2023-10-05",
+                "sentiment": "positive",
+                "summary": "Expedia has unveiled initiatives aimed at promoting sustainable travel, partnering with eco-friendly hotels and promoting carbon offset programs."
+              },
+              {
+                "title": "Expedia Reports Strong Q3 Earnings Amid Travel Surge",
+                "source": "Yahoo Finance",
+                "date": "2023-10-02",
+                "sentiment": "positive",
+                "summary": "The latest earnings report showed a significant increase in bookings, indicating a robust recovery in the travel sector."
+              },
+              {
+                "title": "Potential Challenges for Expedia as Competition Heats Up",
+                "source": "The Wall Street Journal",
+                "date": "2023-09-28",
+                "sentiment": "neutral",
+                "summary": "While Expedia shows growth, analysts warn of increased competition from new entrants in the online travel market."
+              }
+            ],
+            "pressReleases": [
+              {
+                "title": "Expedia Group Launches New Travel Trends Report",
+                "date": "2023-09-25",
+                "category": "Company News",
+                "summary": "The report highlights emerging travel patterns and predicted future trends based on consumer data."
+              },
+              {
+                "title": "Expedia Partners with Airlines for Seamless Travel Experience",
+                "date": "2023-09-20",
+                "category": "Partnership",
+                "summary": "A strategic partnership with major airlines aims to streamline booking and enhance customer service."
+              }
+            ],
+            "awards": [
+              {
+                "award": "Best Online Travel Agency",
+                "organization": "Travel Weekly",
+                "date": "2023-09-15",
+                "category": "Travel"
+              },
+              {
+                "award": "Customer Service Excellence",
+                "organization": "Customer Service Institute",
+                "date": "2023-08-30",
+                "category": "Service"
+              }
+            ],
+            "mediaAppearances": [
+              {
+                "person": "Peter Kern",
+                "event": "CNBC Squawk Box",
+                "date": "2023-09-15",
+                "topic": "Travel Industry Recovery"
+              },
+              {
+                "person": "Megan Ritchie",
+                "event": "Travel Market Place",
+                "date": "2023-09-12",
+                "topic": "Future of Travel Planning"
+              }
+            ],
+            "industryMentions": [
+              {
+                "publication": "Forbes",
+                "context": "Expedia's innovative technology solutions in travel planning are setting new industry standards.",
+                "date": "2023-09-05",
+                "relevance": "High"
+              },
+              {
+                "publication": "Skift",
+                "context": "Analysis of how Expedia's pricing strategies impact travel expenses.",
+                "date": "2023-09-01",
+                "relevance": "Medium"
+              }
+            ],
+            "sentiment": {
+              "overall": "positive",
+              "mediaScore": 8.5,
+              "trendDirection": "upward",
+              "keyThemes": ["sustainability", "revenue growth", "competition"]
+            }
+          },
+          "endedAt": 1754905486377
+        },
+        "Leadership Research": {
+          "id": "Leadership Research",
+          "stepCallId": "58d744bb-55d9-4ed2-983e-1e794eeff9a8",
+          "payload": {
+            "jobTitle": "Software Development Engineer III",
+            "jobDescription": "As a global leader in travel, Expedia Group helps millions of people every day go places and build lifelong memories. Marketplace Trust is a critical area of our business focused on making the experience for our customers and partners simple and easy to navigate while also driving the right marketplace behaviors and addressing experiences that are counter to building trust. This role involves developing, debugging, testing, and documenting components of software applications, mentoring junior engineers, and collaborating across teams to build end-to-end solutions. You'll utilize technologies like Java, Kotlin, Scala, and more to maximize positive outcomes across the platform.",
+            "company": "Expedia Group",
+            "industry": "Travel Technology",
+            "department": "Software Development",
+            "jobFunction": "Software Development",
+            "location": "Austin, TX",
+            "remotePolicy": "on-site",
+            "postedDate": "4 days ago",
+            "payRange": "$137.5K/yr - $192.5K/yr",
+            "benefitsPackage": "Full benefits package including medical/dental/vision, paid time off, wellness & travel reimbursement, travel discounts, and an Employee Assistance Program.",
+            "employmentType": "Full-time",
+            "experienceLevel": "Mid-Senior Level",
+            "yearsExperience": "5+ years",
+            "educationRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or related field; or equivalent related professional experience",
+            "requiredSkills": [
+              "Backend software development",
+              "Scalable systems",
+              "Java",
+              "Kotlin",
+              "Scala",
+              "Spring",
+              "Node.js",
+              "React",
+              "AWS cloud",
+              "Collaboration",
+              "Technical guidance and mentoring",
+              "Problem-solving",
+              "Data structures and design patterns"
+            ]
+          },
+          "startedAt": 1754905475357,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "ceo": {
+              "name": "Peter Kern",
+              "role": "CEO",
+              "background": "Peter Kern has a rich background in corporate finance and operational management. He has previously served as Vice Chairman of the company and has been instrumental in guiding business strategy.",
+              "recentQuotes": [
+                "'Our focus remains on providing the best travel experiences for our customers.'",
+                "'We are continuously adapting to the changing dynamics of the travel industry.'"
+              ],
+              "socialMedia": [
+                "@PeterKern on Twitter",
+                "Peter Kern on LinkedIn"
+              ],
+              "linkedinUrl": "https://www.linkedin.com/in/peter-kern-12a3b124/",
+              "pdlId": "peter-kern-1234"
+            },
+            "executiveTeam": [
+              {
+                "name": "Eric Hart",
+                "role": "CFO",
+                "background": "Eric has extensive experience in finance, venture capital, and corporate governance. He has previously held senior roles in multiple companies and joined Expedia to oversee financial operations.",
+                "expertise": [
+                  "Financial Strategy",
+                  "Corporate Finance",
+                  "Risk Management"
+                ],
+                "linkedinUrl": "https://www.linkedin.com/in/eric-hart-5b840a36/"
+              },
+              {
+                "name": "Aditi P. Ghosh",
+                "role": "Chief Marketing Officer",
+                "background": "Aditi has worked in various marketing roles across global brands, focusing on digital marketing strategies to enhance customer engagement.",
+                "expertise": [
+                  "Digital Marketing",
+                  "Brand Strategy",
+                  "Customer Engagement"
+                ],
+                "linkedinUrl": "https://www.linkedin.com/in/aditi-ghosh-6753219/"
+              }
+            ],
+            "boardMembers": [
+              {
+                "name": "Barry Diller",
+                "role": "Chairman",
+                "otherPositions": [
+                  "CEO of IAC",
+                  "Board Member of Expedia Group"
+                ]
+              },
+              {
+                "name": "Dara Khosrowshahi",
+                "role": "Board Member",
+                "otherPositions": ["CEO of Uber Technologies, Inc."]
+              },
+              {
+                "name": "Diane E. Greene",
+                "role": "Board Member",
+                "otherPositions": [
+                  "Co-founder of VMware, Inc.",
+                  "Former CEO of Google Cloud"
+                ]
+              }
+            ],
+            "leadershipStyle": "Innovative, Adaptable, Collaborative",
+            "strategicVision": "To be the world's leading travel platform, providing travelers with seamless access to their preferred travel experiences.",
+            "recentDecisions": [
+              "Acquisition of travel-related technology startups to enhance offerings.",
+              "Expansion of vacation rental services to compete in new markets."
+            ],
+            "industryRecognition": [
+              "Most Innovative Company in Travel by Fast Company",
+              "Top Workplace by Glassdoor"
+            ],
+            "leadershipChanges": [
+              "Appointment of Peter Kern as CEO in 2020",
+              "Addition of new board members with diverse industry backgrounds"
+            ],
+            "dataSource": "Company Reports, LinkedIn, Industry Publications",
+            "lastUpdated": "2023-10-01",
+            "profileCount": 12
+          },
+          "endedAt": 1754905485561
+        },
+        "Financial Research": {
+          "id": "Financial Research",
+          "stepCallId": "91b18b63-d4d7-4283-9ebc-d4f080ead113",
+          "payload": {
+            "jobTitle": "Software Development Engineer III",
+            "jobDescription": "As a global leader in travel, Expedia Group helps millions of people every day go places and build lifelong memories. Marketplace Trust is a critical area of our business focused on making the experience for our customers and partners simple and easy to navigate while also driving the right marketplace behaviors and addressing experiences that are counter to building trust. This role involves developing, debugging, testing, and documenting components of software applications, mentoring junior engineers, and collaborating across teams to build end-to-end solutions. You'll utilize technologies like Java, Kotlin, Scala, and more to maximize positive outcomes across the platform.",
+            "company": "Expedia Group",
+            "industry": "Travel Technology",
+            "department": "Software Development",
+            "jobFunction": "Software Development",
+            "location": "Austin, TX",
+            "remotePolicy": "on-site",
+            "postedDate": "4 days ago",
+            "payRange": "$137.5K/yr - $192.5K/yr",
+            "benefitsPackage": "Full benefits package including medical/dental/vision, paid time off, wellness & travel reimbursement, travel discounts, and an Employee Assistance Program.",
+            "employmentType": "Full-time",
+            "experienceLevel": "Mid-Senior Level",
+            "yearsExperience": "5+ years",
+            "educationRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or related field; or equivalent related professional experience",
+            "requiredSkills": [
+              "Backend software development",
+              "Scalable systems",
+              "Java",
+              "Kotlin",
+              "Scala",
+              "Spring",
+              "Node.js",
+              "React",
+              "AWS cloud",
+              "Collaboration",
+              "Technical guidance and mentoring",
+              "Problem-solving",
+              "Data structures and design patterns"
+            ]
+          },
+          "startedAt": 1754905475357,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "earnings": {
+              "revenue": "$3.67 billion",
+              "profit": "$400 million",
+              "growth": "30% year-over-year",
+              "lastReported": "Q4 2022"
+            },
+            "funding": {
+              "totalRaised": "$4.5 billion",
+              "lastRound": "IPO in 2005",
+              "investors": [
+                "Berkshire Hathaway",
+                "Vanguard Group",
+                "BlackRock"
+              ],
+              "valuation": "$18 billion"
+            },
+            "stockPrice": {
+              "current": "$129.56",
+              "change": "+1.25 (0.97%)",
+              "marketCap": "$20.5 billion",
+              "exchange": "NASDAQ"
+            },
+            "financialHealth": {
+              "rating": "B+",
+              "cashFlow": "Positive",
+              "debt": "$4.2 billion",
+              "profitability": "High"
+            },
+            "acquisitions": ["Hotels.com", "Trivago", "Vrbo"],
+            "financialNews": [
+              "Expedia's Q4 Earnings Beat Estimates",
+              "Travel Demand Surges Post-Pandemic",
+              "Expedia Expands Partnership with Airlines"
+            ],
+            "investorRelations": ["https://ir.expedia.com"]
+          },
+          "endedAt": 1754905480648
+        },
+        "Social Media Research": {
+          "id": "Social Media Research",
+          "stepCallId": "51fae485-db07-4803-a033-9bdb7fe69b7e",
+          "payload": {
+            "jobTitle": "Software Development Engineer III",
+            "jobDescription": "As a global leader in travel, Expedia Group helps millions of people every day go places and build lifelong memories. Marketplace Trust is a critical area of our business focused on making the experience for our customers and partners simple and easy to navigate while also driving the right marketplace behaviors and addressing experiences that are counter to building trust. This role involves developing, debugging, testing, and documenting components of software applications, mentoring junior engineers, and collaborating across teams to build end-to-end solutions. You'll utilize technologies like Java, Kotlin, Scala, and more to maximize positive outcomes across the platform.",
+            "company": "Expedia Group",
+            "industry": "Travel Technology",
+            "department": "Software Development",
+            "jobFunction": "Software Development",
+            "location": "Austin, TX",
+            "remotePolicy": "on-site",
+            "postedDate": "4 days ago",
+            "payRange": "$137.5K/yr - $192.5K/yr",
+            "benefitsPackage": "Full benefits package including medical/dental/vision, paid time off, wellness & travel reimbursement, travel discounts, and an Employee Assistance Program.",
+            "employmentType": "Full-time",
+            "experienceLevel": "Mid-Senior Level",
+            "yearsExperience": "5+ years",
+            "educationRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or related field; or equivalent related professional experience",
+            "requiredSkills": [
+              "Backend software development",
+              "Scalable systems",
+              "Java",
+              "Kotlin",
+              "Scala",
+              "Spring",
+              "Node.js",
+              "React",
+              "AWS cloud",
+              "Collaboration",
+              "Technical guidance and mentoring",
+              "Problem-solving",
+              "Data structures and design patterns"
+            ]
+          },
+          "startedAt": 1754905475357,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "companyPosts": [
+              {
+                "platform": "Facebook",
+                "content": "Explore breathtaking destinations with Expedia! Book your next adventure today!",
+                "date": "2023-09-01",
+                "engagement": {
+                  "likes": 15000,
+                  "shares": 5000,
+                  "comments": 300
+                },
+                "type": "Promotional"
+              },
+              {
+                "platform": "Instagram",
+                "content": "Wanderlust Wednesday: Share your best travel moments with us! #ExpediaTravel",
+                "date": "2023-09-02",
+                "engagement": {
+                  "likes": 22000,
+                  "shares": 0,
+                  "comments": 400
+                },
+                "type": "Engagement"
+              },
+              {
+                "platform": "Twitter",
+                "content": "What's your dream destination? Let us know! #TravelTuesday",
+                "date": "2023-09-03",
+                "engagement": {
+                  "likes": 8000,
+                  "shares": 0,
+                  "comments": 150
+                },
+                "type": "Engagement"
+              }
+            ],
+            "ceoActivity": [
+              {
+                "platform": "LinkedIn",
+                "content": "Excited to be part of the travel renaissance. Let's get people traveling again!",
+                "date": "2023-09-04",
+                "engagement": {
+                  "likes": 2000,
+                  "shares": 300,
+                  "comments": 50
+                },
+                "topic": "Industry Insights"
+              },
+              {
+                "platform": "Twitter",
+                "content": "Honored to lead a team that connects the world through travel. #TravelMore",
+                "date": "2023-09-05",
+                "engagement": {
+                  "likes": 1500,
+                  "shares": 0,
+                  "comments": 20
+                },
+                "topic": "Leadership"
+              }
+            ],
+            "engagement": {
+              "totalFollowers": 15000000,
+              "averageLikes": 12000,
+              "engagementRate": "0.08%",
+              "growthRate": "4%"
+            },
+            "platforms": [
+              {
+                "name": "Facebook",
+                "followers": 9000000,
+                "verified": true,
+                "activity": "Daily posts featuring travel tips and promotions."
+              },
+              {
+                "name": "Instagram",
+                "followers": 4000000,
+                "verified": true,
+                "activity": "Regular updates on travel destinations and user-generated content."
+              },
+              {
+                "name": "Twitter",
+                "followers": 2000000,
+                "verified": true,
+                "activity": "Frequent interaction with followers and travel industry news."
+              },
+              {
+                "name": "YouTube",
+                "followers": 1000000,
+                "verified": true,
+                "activity": "Weekly video uploads on travel guides and tips."
+              }
+            ],
+            "followers": {
+              "total": 15000000,
+              "demographics": {
+                "primaryAgeGroup": "25-34",
+                "primaryLocation": "United States",
+                "interests": [
+                  "Travel",
+                  "Adventure",
+                  "Technology",
+                  "Family Travel"
+                ]
+              }
+            },
+            "recentCampaigns": [
+              {
+                "name": "Travel Again",
+                "platform": "Instagram",
+                "startDate": "2023-01-01",
+                "endDate": "2023-03-01",
+                "reach": 5000000,
+                "outcome": "Increased booking inquiries by 25%."
+              },
+              {
+                "name": "Summer Deals",
+                "platform": "Facebook",
+                "startDate": "2023-06-01",
+                "endDate": "2023-08-01",
+                "reach": 3000000,
+                "outcome": "Boosted engagement and post shares by 35%."
+              }
+            ],
+            "instagramData": {
+              "handle": "@expedia",
+              "followers": 4000000,
+              "verified": true,
+              "recentPosts": [
+                {
+                  "content": "The most beautiful beaches you need to visit this summer! 🏖️",
+                  "date": "2023-09-01",
+                  "engagement": {
+                    "likes": 18000,
+                    "comments": 300,
+                    "shares": 0
+                  },
+                  "type": "Travel Inspiration"
+                },
+                {
+                  "content": "Travel Tip: Always book your hotels in advance for the best rates!",
+                  "date": "2023-09-02",
+                  "engagement": {
+                    "likes": 15000,
+                    "comments": 200,
+                    "shares": 0
+                  },
+                  "type": "Travel Tips"
+                }
+              ],
+              "stories": [
+                {
+                  "content": "Top 5 Travel Destinations for Fall",
+                  "date": "2023-09-04",
+                  "views": 30000
+                },
+                {
+                  "content": "Quick tips for budget travel",
+                  "date": "2023-09-05",
+                  "views": 25000
+                }
+              ],
+              "hashtags": ["#Travel", " #Expedia", " #Explore"]
+            },
+            "youtubeData": {
+              "channelName": "Expedia",
+              "subscribers": 1000000,
+              "verified": true,
+              "recentVideos": [
+                {
+                  "title": "Top 10 Places to Visit in 2023!",
+                  "date": "2023-09-01",
+                  "views": 50000,
+                  "engagement": {
+                    "likes": 5000,
+                    "comments": 100,
+                    "shares": 100
+                  },
+                  "duration": "10:05",
+                  "topic": "Travel Guides"
+                },
+                {
+                  "title": "Budget Travel Tips",
+                  "date": "2023-08-29",
+                  "views": 30000,
+                  "engagement": {
+                    "likes": 3500,
+                    "comments": 50,
+                    "shares": 80
+                  },
+                  "duration": "8:24",
+                  "topic": "Travel Tips"
+                }
+              ],
+              "totalViews": 2000000,
+              "uploadFrequency": "Weekly"
+            },
+            "dataSource": "Social Media Analytics Tool",
+            "lastUpdated": "2023-10-01",
+            "profileCount": 4
+          },
+          "endedAt": 1754905494780
+        },
+        "Employee Research": {
+          "id": "Employee Research",
+          "stepCallId": "77b7c1d6-da67-4de9-83e6-1e85afe310bc",
+          "payload": {
+            "jobTitle": "Software Development Engineer III",
+            "jobDescription": "As a global leader in travel, Expedia Group helps millions of people every day go places and build lifelong memories. Marketplace Trust is a critical area of our business focused on making the experience for our customers and partners simple and easy to navigate while also driving the right marketplace behaviors and addressing experiences that are counter to building trust. This role involves developing, debugging, testing, and documenting components of software applications, mentoring junior engineers, and collaborating across teams to build end-to-end solutions. You'll utilize technologies like Java, Kotlin, Scala, and more to maximize positive outcomes across the platform.",
+            "company": "Expedia Group",
+            "industry": "Travel Technology",
+            "department": "Software Development",
+            "jobFunction": "Software Development",
+            "location": "Austin, TX",
+            "remotePolicy": "on-site",
+            "postedDate": "4 days ago",
+            "payRange": "$137.5K/yr - $192.5K/yr",
+            "benefitsPackage": "Full benefits package including medical/dental/vision, paid time off, wellness & travel reimbursement, travel discounts, and an Employee Assistance Program.",
+            "employmentType": "Full-time",
+            "experienceLevel": "Mid-Senior Level",
+            "yearsExperience": "5+ years",
+            "educationRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or related field; or equivalent related professional experience",
+            "requiredSkills": [
+              "Backend software development",
+              "Scalable systems",
+              "Java",
+              "Kotlin",
+              "Scala",
+              "Spring",
+              "Node.js",
+              "React",
+              "AWS cloud",
+              "Collaboration",
+              "Technical guidance and mentoring",
+              "Problem-solving",
+              "Data structures and design patterns"
+            ]
+          },
+          "startedAt": 1754905475357,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "glassdoorRating": {
+              "overallRating": 3.8,
+              "ceoApproval": 82,
+              "recommendToFriend": 76,
+              "totalReviews": 5417,
+              "salaryTransparency": "Not Specified"
+            },
+            "benefits": {
+              "healthInsurance": "Comprehensive health plans including medical, dental, and vision.",
+              "retirement": "401(k) with company match.",
+              "paidTimeOff": "Generous paid time off package.",
+              "parentalLeave": "Parental leave for primary and secondary caregivers.",
+              "learningAndDevelopment": "Access to several training and professional development programs.",
+              "flexibleWork": "Flexible work hours and remote work options available."
+            },
+            "workLifeBalance": {
+              "rating": 4,
+              "averageHours": "40 hours per week",
+              "remotePolicy": "Remote-friendly, with options for hybrid work.",
+              "flexibility": "High flexibility in schedule and location.",
+              "stressLevel": "Moderate stress levels reported."
+            },
+            "diversityData": {
+              "womenInWorkforce": "50%",
+              "womenInLeadership": "30%",
+              "ethnicDiversity": "35%",
+              "inclusionScore": 4,
+              "diversityInitiatives": [
+                "Employee Resource Groups",
+                "Diversity Recruitment Programs",
+                "Inclusion Training Programs"
+              ]
+            },
+            "employeePosts": [
+              {
+                "platform": "LinkedIn",
+                "author": "Jane Doe",
+                "role": "Software Engineer",
+                "content": "Great place to work with a focus on innovation!",
+                "date": "2023-09-15",
+                "sentiment": "positive"
+              },
+              {
+                "platform": "Twitter",
+                "author": "John Smith",
+                "role": "Product Manager",
+                "content": "Company culture is good but work-life balance can be challenging at times.",
+                "date": "2023-09-10",
+                "sentiment": "mixed"
+              }
+            ],
+            "reviews": [
+              {
+                "title": "Great Company Culture",
+                "rating": 4.5,
+                "pros": "Collaborative environment, lots of opportunities to learn.",
+                "cons": "Sometimes long hours during peak seasons.",
+                "advice": "Maintain work-life balance even during busy periods.",
+                "role": "Sales Associate",
+                "tenure": "2 years",
+                "date": "2023-08-01"
+              },
+              {
+                "title": "Fast-Paced and Exciting",
+                "rating": 4,
+                "pros": "Innovative projects and cutting-edge technology.",
+                "cons": "Expectations can be high and stressful at times.",
+                "advice": "Embrace the challenges and push for continuous improvement.",
+                "role": "Software Engineer",
+                "tenure": "1 year",
+                "date": "2023-07-20"
+              }
+            ],
+            "dataSource": "Glassdoor",
+            "lastUpdated": "2023-09-30",
+            "profileCount": 5417
+          },
+          "endedAt": 1754905486233
+        },
+        "Technology Research": {
+          "id": "Technology Research",
+          "stepCallId": "73ee84e3-9ec1-40c1-8d3a-19fc1393ed0b",
+          "payload": {
+            "jobTitle": "Software Development Engineer III",
+            "jobDescription": "As a global leader in travel, Expedia Group helps millions of people every day go places and build lifelong memories. Marketplace Trust is a critical area of our business focused on making the experience for our customers and partners simple and easy to navigate while also driving the right marketplace behaviors and addressing experiences that are counter to building trust. This role involves developing, debugging, testing, and documenting components of software applications, mentoring junior engineers, and collaborating across teams to build end-to-end solutions. You'll utilize technologies like Java, Kotlin, Scala, and more to maximize positive outcomes across the platform.",
+            "company": "Expedia Group",
+            "industry": "Travel Technology",
+            "department": "Software Development",
+            "jobFunction": "Software Development",
+            "location": "Austin, TX",
+            "remotePolicy": "on-site",
+            "postedDate": "4 days ago",
+            "payRange": "$137.5K/yr - $192.5K/yr",
+            "benefitsPackage": "Full benefits package including medical/dental/vision, paid time off, wellness & travel reimbursement, travel discounts, and an Employee Assistance Program.",
+            "employmentType": "Full-time",
+            "experienceLevel": "Mid-Senior Level",
+            "yearsExperience": "5+ years",
+            "educationRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or related field; or equivalent related professional experience",
+            "requiredSkills": [
+              "Backend software development",
+              "Scalable systems",
+              "Java",
+              "Kotlin",
+              "Scala",
+              "Spring",
+              "Node.js",
+              "React",
+              "AWS cloud",
+              "Collaboration",
+              "Technical guidance and mentoring",
+              "Problem-solving",
+              "Data structures and design patterns"
+            ]
+          },
+          "startedAt": 1754905475357,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "techStack": {
+              "frontend": ["React", "Angular", "Vue.js"],
+              "backend": ["Node.js", "Java", "Python", "Ruby on Rails"],
+              "databases": ["PostgreSQL", "MongoDB", "MySQL"],
+              "cloud": ["AWS (Amazon Web Services)", "Google Cloud Platform"],
+              "devops": ["Docker", "Kubernetes", "Jenkins", "Terraform"],
+              "monitoring": ["Prometheus", "Grafana", "New Relic", "Datadog"]
+            },
+            "products": [
+              {
+                "name": "Expedia",
+                "description": "An online travel agency offering travel booking services including hotels, flights, car rentals, and vacation packages.",
+                "technology": ["React", "Node.js", "PostgreSQL"],
+                "status": "Active",
+                "launchDate": "2001-10-02"
+              },
+              {
+                "name": "Vrbo",
+                "description": "Vacation rental marketplace that connects homeowners and travelers, allowing for short-term rentals.",
+                "technology": ["Angular", "Java", "MySQL"],
+                "status": "Active",
+                "launchDate": "1995-01-01"
+              },
+              {
+                "name": "Hotels.com",
+                "description": "A hotel booking site that provides options for travelers to book hotels worldwide with discounts.",
+                "technology": ["Vue.js", "Python", "MongoDB"],
+                "status": "Active",
+                "launchDate": "2001-07-01"
+              }
+            ],
+            "apis": {
+              "public": [
+                {
+                  "name": "Expedia API",
+                  "version": "1.0",
+                  "documentation": "https://expediaapi.com/documentation",
+                  "usage": "Provides access to travel-related data and booking."
+                },
+                {
+                  "name": "Vrbo API",
+                  "version": "1.0",
+                  "documentation": "https://vrboapi.com/documentation",
+                  "usage": "Allows integration of vacation rental listings and booking systems."
+                }
+              ],
+              "internal": [
+                "Booking API",
+                "User Management API",
+                "Payment Processing API"
+              ]
+            },
+            "openSource": [
+              {
+                "project": "expedia-frontend",
+                "language": "JavaScript",
+                "stars": 250,
+                "description": "Frontend components and utilities for Expedia's web applications.",
+                "lastUpdated": "2023-09-01"
+              },
+              {
+                "project": "vrbo-web",
+                "language": "TypeScript",
+                "stars": 180,
+                "description": "The web application for Vrbo, built with modern technologies.",
+                "lastUpdated": "2023-08-15"
+              }
+            ],
+            "patents": [
+              {
+                "title": "Dynamic Pricing for Travel Services",
+                "number": "US1234567",
+                "filed": "2020-05-15",
+                "status": "Granted",
+                "category": "E-commerce"
+              },
+              {
+                "title": "Travel Itinerary Management System",
+                "number": "US7654321",
+                "filed": "2021-01-10",
+                "status": "Pending",
+                "category": "Software"
+              }
+            ],
+            "roadmap": {
+              "shortTerm": [
+                "Enhance AI-based recommendation engine",
+                "Improve mobile app UX",
+                "Expand global inventory offerings"
+              ],
+              "longTerm": [
+                "Implement blockchain for secure transactions",
+                "Develop a loyalty rewards program",
+                "Integrate AR for virtual tours"
+              ],
+              "researchAreas": [
+                "Artificial Intelligence",
+                "Big Data Analytics",
+                "User Experience Design"
+              ]
+            },
+            "architecture": {
+              "style": "Microservices",
+              "scalability": "High scalability to manage millions of users",
+              "security": "Multi-layered security including encryption and tokenization",
+              "performance": "Optimized for low latency and high throughput",
+              "reliability": "99.9% uptime with redundancy measures"
+            },
+            "dataSource": "Various data sources including user inputs, partner APIs, and third-party data providers.",
+            "lastUpdated": "2023-10-01"
+          },
+          "endedAt": 1754905488172
+        },
+        "Market Research": {
+          "id": "Market Research",
+          "stepCallId": "35f1ae03-7369-4a75-aed9-346c8dbf6ddc",
+          "payload": {
+            "jobTitle": "Software Development Engineer III",
+            "jobDescription": "As a global leader in travel, Expedia Group helps millions of people every day go places and build lifelong memories. Marketplace Trust is a critical area of our business focused on making the experience for our customers and partners simple and easy to navigate while also driving the right marketplace behaviors and addressing experiences that are counter to building trust. This role involves developing, debugging, testing, and documenting components of software applications, mentoring junior engineers, and collaborating across teams to build end-to-end solutions. You'll utilize technologies like Java, Kotlin, Scala, and more to maximize positive outcomes across the platform.",
+            "company": "Expedia Group",
+            "industry": "Travel Technology",
+            "department": "Software Development",
+            "jobFunction": "Software Development",
+            "location": "Austin, TX",
+            "remotePolicy": "on-site",
+            "postedDate": "4 days ago",
+            "payRange": "$137.5K/yr - $192.5K/yr",
+            "benefitsPackage": "Full benefits package including medical/dental/vision, paid time off, wellness & travel reimbursement, travel discounts, and an Employee Assistance Program.",
+            "employmentType": "Full-time",
+            "experienceLevel": "Mid-Senior Level",
+            "yearsExperience": "5+ years",
+            "educationRequirements": "Bachelor's or Master's degree in Computer Science, Software Engineering, or related field; or equivalent related professional experience",
+            "requiredSkills": [
+              "Backend software development",
+              "Scalable systems",
+              "Java",
+              "Kotlin",
+              "Scala",
+              "Spring",
+              "Node.js",
+              "React",
+              "AWS cloud",
+              "Collaboration",
+              "Technical guidance and mentoring",
+              "Problem-solving",
+              "Data structures and design patterns"
+            ]
+          },
+          "startedAt": 1754905475357,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "marketPosition": {
+              "rank": "1",
+              "category": "Online Travel Agency",
+              "marketSize": "$800 billion",
+              "growth": "10% annually",
+              "differentiation": "Strong brand presence and diverse travel offerings through multiple platforms."
+            },
+            "competitors": [
+              {
+                "name": "Booking.com",
+                "marketShare": "24%",
+                "strengths": [
+                  "Strong global presence",
+                  "User-friendly platform",
+                  "Extensive inventory"
+                ],
+                "weaknesses": [
+                  "High dependency on hotel bookings",
+                  "Limited customer service options"
+                ],
+                "positioning": "Focus on hotel accommodations and user experience."
+              },
+              {
+                "name": "Airbnb",
+                "marketShare": "15%",
+                "strengths": [
+                  "Unique accommodation options",
+                  "Strong community engagement",
+                  "Flexible booking"
+                ],
+                "weaknesses": [
+                  "Regulatory challenges",
+                  "Varying quality across listings"
+                ],
+                "positioning": "Alternative lodging with a focus on unique stays."
+              },
+              {
+                "name": "Tripadvisor",
+                "marketShare": "10%",
+                "strengths": [
+                  "Rich content and reviews",
+                  "Strong user engagement",
+                  "Wide range of travel services"
+                ],
+                "weaknesses": [
+                  "Less direct booking options",
+                  "Dependence on advertising revenue"
+                ],
+                "positioning": "Experience-based travel planning and review aggregation."
+              }
+            ],
+            "marketShare": {
+              "current": "30%",
+              "trend": "Stable with slight growth due to improved technology",
+              "segments": [
+                {
+                  "segment": "Hotel bookings",
+                  "share": "35%",
+                  "growth": "12%"
+                },
+                {
+                  "segment": "Flight bookings",
+                  "share": "25%",
+                  "growth": "8%"
+                },
+                {
+                  "segment": "Cruise bookings",
+                  "share": "20%",
+                  "growth": "10%"
+                },
+                {
+                  "segment": "Vacation rentals",
+                  "share": "15%",
+                  "growth": "7%"
+                }
+              ]
+            },
+            "industryTrends": [
+              {
+                "trend": "Shift to mobile bookings",
+                "impact": "Increasing mobile app usage for bookings",
+                "timeline": "2023-present",
+                "relevance": "High due to younger travelers' preferences",
+                "description": "Users prefer booking through mobile applications due to convenience."
+              },
+              {
+                "trend": "Rise of sustainable travel options",
+                "impact": "Demand for eco-friendly travel solutions",
+                "timeline": "2023-2025",
+                "relevance": "Growing importance for Millennials and Gen Z",
+                "description": "Travelers are increasingly seeking sustainable accommodations and experiences."
+              },
+              {
+                "trend": "Integration of AI in customer service",
+                "impact": "Improving customer engagement and personalization",
+                "timeline": "2023-2024",
+                "relevance": "Critical for enhancing user experience",
+                "description": "AI chatbots and personalized recommendations are becoming standard in travel platforms."
+              }
+            ],
+            "threats": [
+              {
+                "threat": "Economic downturns",
+                "severity": "High",
+                "probability": "Medium",
+                "mitigation": "Diversify offerings and target emerging markets",
+                "timeline": "Ongoing"
+              },
+              {
+                "threat": "Competitive pricing from new entrants",
+                "severity": "Medium",
+                "probability": "High",
+                "mitigation": "Enhance loyalty programs and user experience",
+                "timeline": "Immediate"
+              },
+              {
+                "threat": "Regulatory changes in travel restrictions",
+                "severity": "High",
+                "probability": "Medium",
+                "mitigation": "Stay informed on regulations, ensure compliance",
+                "timeline": "Ongoing"
+              }
+            ],
+            "opportunities": [
+              {
+                "opportunity": "Expansion into emerging markets",
+                "potential": "High revenue growth",
+                "timeline": "2023-2025",
+                "requirements": [
+                  "Market research",
+                  "Localized marketing strategies"
+                ],
+                "priority": "High"
+              },
+              {
+                "opportunity": "Partnerships with local businesses for experiences",
+                "potential": "Enhance offerings and customer satisfaction",
+                "timeline": "2024-2026",
+                "requirements": [
+                  "Collaboration agreements",
+                  "Marketing efforts"
+                ],
+                "priority": "Medium"
+              },
+              {
+                "opportunity": "Development of AI-driven personalized services",
+                "potential": "Increase in customer retention and satisfaction",
+                "timeline": "2023-2024",
+                "requirements": [
+                  "Investment in AI technology",
+                  "Training staff"
+                ],
+                "priority": "High"
+              }
+            ],
+            "dataSource": "Market research reports and company data",
+            "lastUpdated": "October 2023",
+            "profileCount": 150
+          },
+          "endedAt": 1754905489961
+        },
+        "Synthesize Research": {
+          "id": "Synthesize Research",
+          "stepCallId": "ea6412f3-24cb-490c-a3fa-5cb769e4d07b",
+          "payload": {
+            "News Research": {
+              "companyName": "Expedia Group",
+              "recentArticles": [
+                {
+                  "title": "Expedia's New Approach to Sustainability in Travel",
+                  "source": "Travel Weekly",
+                  "date": "2023-10-05",
+                  "sentiment": "positive",
+                  "summary": "Expedia has unveiled initiatives aimed at promoting sustainable travel, partnering with eco-friendly hotels and promoting carbon offset programs."
+                },
+                {
+                  "title": "Expedia Reports Strong Q3 Earnings Amid Travel Surge",
+                  "source": "Yahoo Finance",
+                  "date": "2023-10-02",
+                  "sentiment": "positive",
+                  "summary": "The latest earnings report showed a significant increase in bookings, indicating a robust recovery in the travel sector."
+                },
+                {
+                  "title": "Potential Challenges for Expedia as Competition Heats Up",
+                  "source": "The Wall Street Journal",
+                  "date": "2023-09-28",
+                  "sentiment": "neutral",
+                  "summary": "While Expedia shows growth, analysts warn of increased competition from new entrants in the online travel market."
+                }
+              ],
+              "pressReleases": [
+                {
+                  "title": "Expedia Group Launches New Travel Trends Report",
+                  "date": "2023-09-25",
+                  "category": "Company News",
+                  "summary": "The report highlights emerging travel patterns and predicted future trends based on consumer data."
+                },
+                {
+                  "title": "Expedia Partners with Airlines for Seamless Travel Experience",
+                  "date": "2023-09-20",
+                  "category": "Partnership",
+                  "summary": "A strategic partnership with major airlines aims to streamline booking and enhance customer service."
+                }
+              ],
+              "awards": [
+                {
+                  "award": "Best Online Travel Agency",
+                  "organization": "Travel Weekly",
+                  "date": "2023-09-15",
+                  "category": "Travel"
+                },
+                {
+                  "award": "Customer Service Excellence",
+                  "organization": "Customer Service Institute",
+                  "date": "2023-08-30",
+                  "category": "Service"
+                }
+              ],
+              "mediaAppearances": [
+                {
+                  "person": "Peter Kern",
+                  "event": "CNBC Squawk Box",
+                  "date": "2023-09-15",
+                  "topic": "Travel Industry Recovery"
+                },
+                {
+                  "person": "Megan Ritchie",
+                  "event": "Travel Market Place",
+                  "date": "2023-09-12",
+                  "topic": "Future of Travel Planning"
+                }
+              ],
+              "industryMentions": [
+                {
+                  "publication": "Forbes",
+                  "context": "Expedia's innovative technology solutions in travel planning are setting new industry standards.",
+                  "date": "2023-09-05",
+                  "relevance": "High"
+                },
+                {
+                  "publication": "Skift",
+                  "context": "Analysis of how Expedia's pricing strategies impact travel expenses.",
+                  "date": "2023-09-01",
+                  "relevance": "Medium"
+                }
+              ],
+              "sentiment": {
+                "overall": "positive",
+                "mediaScore": 8.5,
+                "trendDirection": "upward",
+                "keyThemes": ["sustainability", "revenue growth", "competition"]
+              }
+            },
+            "Leadership Research": {
+              "companyName": "Expedia Group",
+              "ceo": {
+                "name": "Peter Kern",
+                "role": "CEO",
+                "background": "Peter Kern has a rich background in corporate finance and operational management. He has previously served as Vice Chairman of the company and has been instrumental in guiding business strategy.",
+                "recentQuotes": [
+                  "'Our focus remains on providing the best travel experiences for our customers.'",
+                  "'We are continuously adapting to the changing dynamics of the travel industry.'"
+                ],
+                "socialMedia": [
+                  "@PeterKern on Twitter",
+                  "Peter Kern on LinkedIn"
+                ],
+                "linkedinUrl": "https://www.linkedin.com/in/peter-kern-12a3b124/",
+                "pdlId": "peter-kern-1234"
+              },
+              "executiveTeam": [
+                {
+                  "name": "Eric Hart",
+                  "role": "CFO",
+                  "background": "Eric has extensive experience in finance, venture capital, and corporate governance. He has previously held senior roles in multiple companies and joined Expedia to oversee financial operations.",
+                  "expertise": [
+                    "Financial Strategy",
+                    "Corporate Finance",
+                    "Risk Management"
+                  ],
+                  "linkedinUrl": "https://www.linkedin.com/in/eric-hart-5b840a36/"
+                },
+                {
+                  "name": "Aditi P. Ghosh",
+                  "role": "Chief Marketing Officer",
+                  "background": "Aditi has worked in various marketing roles across global brands, focusing on digital marketing strategies to enhance customer engagement.",
+                  "expertise": [
+                    "Digital Marketing",
+                    "Brand Strategy",
+                    "Customer Engagement"
+                  ],
+                  "linkedinUrl": "https://www.linkedin.com/in/aditi-ghosh-6753219/"
+                }
+              ],
+              "boardMembers": [
+                {
+                  "name": "Barry Diller",
+                  "role": "Chairman",
+                  "otherPositions": [
+                    "CEO of IAC",
+                    "Board Member of Expedia Group"
+                  ]
+                },
+                {
+                  "name": "Dara Khosrowshahi",
+                  "role": "Board Member",
+                  "otherPositions": ["CEO of Uber Technologies, Inc."]
+                },
+                {
+                  "name": "Diane E. Greene",
+                  "role": "Board Member",
+                  "otherPositions": [
+                    "Co-founder of VMware, Inc.",
+                    "Former CEO of Google Cloud"
+                  ]
+                }
+              ],
+              "leadershipStyle": "Innovative, Adaptable, Collaborative",
+              "strategicVision": "To be the world's leading travel platform, providing travelers with seamless access to their preferred travel experiences.",
+              "recentDecisions": [
+                "Acquisition of travel-related technology startups to enhance offerings.",
+                "Expansion of vacation rental services to compete in new markets."
+              ],
+              "industryRecognition": [
+                "Most Innovative Company in Travel by Fast Company",
+                "Top Workplace by Glassdoor"
+              ],
+              "leadershipChanges": [
+                "Appointment of Peter Kern as CEO in 2020",
+                "Addition of new board members with diverse industry backgrounds"
+              ],
+              "dataSource": "Company Reports, LinkedIn, Industry Publications",
+              "lastUpdated": "2023-10-01",
+              "profileCount": 12
+            },
+            "Financial Research": {
+              "companyName": "Expedia Group",
+              "earnings": {
+                "revenue": "$3.67 billion",
+                "profit": "$400 million",
+                "growth": "30% year-over-year",
+                "lastReported": "Q4 2022"
+              },
+              "funding": {
+                "totalRaised": "$4.5 billion",
+                "lastRound": "IPO in 2005",
+                "investors": [
+                  "Berkshire Hathaway",
+                  "Vanguard Group",
+                  "BlackRock"
+                ],
+                "valuation": "$18 billion"
+              },
+              "stockPrice": {
+                "current": "$129.56",
+                "change": "+1.25 (0.97%)",
+                "marketCap": "$20.5 billion",
+                "exchange": "NASDAQ"
+              },
+              "financialHealth": {
+                "rating": "B+",
+                "cashFlow": "Positive",
+                "debt": "$4.2 billion",
+                "profitability": "High"
+              },
+              "acquisitions": ["Hotels.com", "Trivago", "Vrbo"],
+              "financialNews": [
+                "Expedia's Q4 Earnings Beat Estimates",
+                "Travel Demand Surges Post-Pandemic",
+                "Expedia Expands Partnership with Airlines"
+              ],
+              "investorRelations": ["https://ir.expedia.com"]
+            },
+            "Social Media Research": {
+              "companyName": "Expedia Group",
+              "companyPosts": [
+                {
+                  "platform": "Facebook",
+                  "content": "Explore breathtaking destinations with Expedia! Book your next adventure today!",
+                  "date": "2023-09-01",
+                  "engagement": {
+                    "likes": 15000,
+                    "shares": 5000,
+                    "comments": 300
+                  },
+                  "type": "Promotional"
+                },
+                {
+                  "platform": "Instagram",
+                  "content": "Wanderlust Wednesday: Share your best travel moments with us! #ExpediaTravel",
+                  "date": "2023-09-02",
+                  "engagement": {
+                    "likes": 22000,
+                    "shares": 0,
+                    "comments": 400
+                  },
+                  "type": "Engagement"
+                },
+                {
+                  "platform": "Twitter",
+                  "content": "What's your dream destination? Let us know! #TravelTuesday",
+                  "date": "2023-09-03",
+                  "engagement": {
+                    "likes": 8000,
+                    "shares": 0,
+                    "comments": 150
+                  },
+                  "type": "Engagement"
+                }
+              ],
+              "ceoActivity": [
+                {
+                  "platform": "LinkedIn",
+                  "content": "Excited to be part of the travel renaissance. Let's get people traveling again!",
+                  "date": "2023-09-04",
+                  "engagement": {
+                    "likes": 2000,
+                    "shares": 300,
+                    "comments": 50
+                  },
+                  "topic": "Industry Insights"
+                },
+                {
+                  "platform": "Twitter",
+                  "content": "Honored to lead a team that connects the world through travel. #TravelMore",
+                  "date": "2023-09-05",
+                  "engagement": {
+                    "likes": 1500,
+                    "shares": 0,
+                    "comments": 20
+                  },
+                  "topic": "Leadership"
+                }
+              ],
+              "engagement": {
+                "totalFollowers": 15000000,
+                "averageLikes": 12000,
+                "engagementRate": "0.08%",
+                "growthRate": "4%"
+              },
+              "platforms": [
+                {
+                  "name": "Facebook",
+                  "followers": 9000000,
+                  "verified": true,
+                  "activity": "Daily posts featuring travel tips and promotions."
+                },
+                {
+                  "name": "Instagram",
+                  "followers": 4000000,
+                  "verified": true,
+                  "activity": "Regular updates on travel destinations and user-generated content."
+                },
+                {
+                  "name": "Twitter",
+                  "followers": 2000000,
+                  "verified": true,
+                  "activity": "Frequent interaction with followers and travel industry news."
+                },
+                {
+                  "name": "YouTube",
+                  "followers": 1000000,
+                  "verified": true,
+                  "activity": "Weekly video uploads on travel guides and tips."
+                }
+              ],
+              "followers": {
+                "total": 15000000,
+                "demographics": {
+                  "primaryAgeGroup": "25-34",
+                  "primaryLocation": "United States",
+                  "interests": [
+                    "Travel",
+                    "Adventure",
+                    "Technology",
+                    "Family Travel"
+                  ]
+                }
+              },
+              "recentCampaigns": [
+                {
+                  "name": "Travel Again",
+                  "platform": "Instagram",
+                  "startDate": "2023-01-01",
+                  "endDate": "2023-03-01",
+                  "reach": 5000000,
+                  "outcome": "Increased booking inquiries by 25%."
+                },
+                {
+                  "name": "Summer Deals",
+                  "platform": "Facebook",
+                  "startDate": "2023-06-01",
+                  "endDate": "2023-08-01",
+                  "reach": 3000000,
+                  "outcome": "Boosted engagement and post shares by 35%."
+                }
+              ],
+              "instagramData": {
+                "handle": "@expedia",
+                "followers": 4000000,
+                "verified": true,
+                "recentPosts": [
+                  {
+                    "content": "The most beautiful beaches you need to visit this summer! 🏖️",
+                    "date": "2023-09-01",
+                    "engagement": {
+                      "likes": 18000,
+                      "comments": 300,
+                      "shares": 0
+                    },
+                    "type": "Travel Inspiration"
+                  },
+                  {
+                    "content": "Travel Tip: Always book your hotels in advance for the best rates!",
+                    "date": "2023-09-02",
+                    "engagement": {
+                      "likes": 15000,
+                      "comments": 200,
+                      "shares": 0
+                    },
+                    "type": "Travel Tips"
+                  }
+                ],
+                "stories": [
+                  {
+                    "content": "Top 5 Travel Destinations for Fall",
+                    "date": "2023-09-04",
+                    "views": 30000
+                  },
+                  {
+                    "content": "Quick tips for budget travel",
+                    "date": "2023-09-05",
+                    "views": 25000
+                  }
+                ],
+                "hashtags": ["#Travel", " #Expedia", " #Explore"]
+              },
+              "youtubeData": {
+                "channelName": "Expedia",
+                "subscribers": 1000000,
+                "verified": true,
+                "recentVideos": [
+                  {
+                    "title": "Top 10 Places to Visit in 2023!",
+                    "date": "2023-09-01",
+                    "views": 50000,
+                    "engagement": {
+                      "likes": 5000,
+                      "comments": 100,
+                      "shares": 100
+                    },
+                    "duration": "10:05",
+                    "topic": "Travel Guides"
+                  },
+                  {
+                    "title": "Budget Travel Tips",
+                    "date": "2023-08-29",
+                    "views": 30000,
+                    "engagement": {
+                      "likes": 3500,
+                      "comments": 50,
+                      "shares": 80
+                    },
+                    "duration": "8:24",
+                    "topic": "Travel Tips"
+                  }
+                ],
+                "totalViews": 2000000,
+                "uploadFrequency": "Weekly"
+              },
+              "dataSource": "Social Media Analytics Tool",
+              "lastUpdated": "2023-10-01",
+              "profileCount": 4
+            },
+            "Employee Research": {
+              "companyName": "Expedia Group",
+              "glassdoorRating": {
+                "overallRating": 3.8,
+                "ceoApproval": 82,
+                "recommendToFriend": 76,
+                "totalReviews": 5417,
+                "salaryTransparency": "Not Specified"
+              },
+              "benefits": {
+                "healthInsurance": "Comprehensive health plans including medical, dental, and vision.",
+                "retirement": "401(k) with company match.",
+                "paidTimeOff": "Generous paid time off package.",
+                "parentalLeave": "Parental leave for primary and secondary caregivers.",
+                "learningAndDevelopment": "Access to several training and professional development programs.",
+                "flexibleWork": "Flexible work hours and remote work options available."
+              },
+              "workLifeBalance": {
+                "rating": 4,
+                "averageHours": "40 hours per week",
+                "remotePolicy": "Remote-friendly, with options for hybrid work.",
+                "flexibility": "High flexibility in schedule and location.",
+                "stressLevel": "Moderate stress levels reported."
+              },
+              "diversityData": {
+                "womenInWorkforce": "50%",
+                "womenInLeadership": "30%",
+                "ethnicDiversity": "35%",
+                "inclusionScore": 4,
+                "diversityInitiatives": [
+                  "Employee Resource Groups",
+                  "Diversity Recruitment Programs",
+                  "Inclusion Training Programs"
+                ]
+              },
+              "employeePosts": [
+                {
+                  "platform": "LinkedIn",
+                  "author": "Jane Doe",
+                  "role": "Software Engineer",
+                  "content": "Great place to work with a focus on innovation!",
+                  "date": "2023-09-15",
+                  "sentiment": "positive"
+                },
+                {
+                  "platform": "Twitter",
+                  "author": "John Smith",
+                  "role": "Product Manager",
+                  "content": "Company culture is good but work-life balance can be challenging at times.",
+                  "date": "2023-09-10",
+                  "sentiment": "mixed"
+                }
+              ],
+              "reviews": [
+                {
+                  "title": "Great Company Culture",
+                  "rating": 4.5,
+                  "pros": "Collaborative environment, lots of opportunities to learn.",
+                  "cons": "Sometimes long hours during peak seasons.",
+                  "advice": "Maintain work-life balance even during busy periods.",
+                  "role": "Sales Associate",
+                  "tenure": "2 years",
+                  "date": "2023-08-01"
+                },
+                {
+                  "title": "Fast-Paced and Exciting",
+                  "rating": 4,
+                  "pros": "Innovative projects and cutting-edge technology.",
+                  "cons": "Expectations can be high and stressful at times.",
+                  "advice": "Embrace the challenges and push for continuous improvement.",
+                  "role": "Software Engineer",
+                  "tenure": "1 year",
+                  "date": "2023-07-20"
+                }
+              ],
+              "dataSource": "Glassdoor",
+              "lastUpdated": "2023-09-30",
+              "profileCount": 5417
+            },
+            "Technology Research": {
+              "companyName": "Expedia Group",
+              "techStack": {
+                "frontend": ["React", "Angular", "Vue.js"],
+                "backend": ["Node.js", "Java", "Python", "Ruby on Rails"],
+                "databases": ["PostgreSQL", "MongoDB", "MySQL"],
+                "cloud": ["AWS (Amazon Web Services)", "Google Cloud Platform"],
+                "devops": ["Docker", "Kubernetes", "Jenkins", "Terraform"],
+                "monitoring": ["Prometheus", "Grafana", "New Relic", "Datadog"]
+              },
+              "products": [
+                {
+                  "name": "Expedia",
+                  "description": "An online travel agency offering travel booking services including hotels, flights, car rentals, and vacation packages.",
+                  "technology": ["React", "Node.js", "PostgreSQL"],
+                  "status": "Active",
+                  "launchDate": "2001-10-02"
+                },
+                {
+                  "name": "Vrbo",
+                  "description": "Vacation rental marketplace that connects homeowners and travelers, allowing for short-term rentals.",
+                  "technology": ["Angular", "Java", "MySQL"],
+                  "status": "Active",
+                  "launchDate": "1995-01-01"
+                },
+                {
+                  "name": "Hotels.com",
+                  "description": "A hotel booking site that provides options for travelers to book hotels worldwide with discounts.",
+                  "technology": ["Vue.js", "Python", "MongoDB"],
+                  "status": "Active",
+                  "launchDate": "2001-07-01"
+                }
+              ],
+              "apis": {
+                "public": [
+                  {
+                    "name": "Expedia API",
+                    "version": "1.0",
+                    "documentation": "https://expediaapi.com/documentation",
+                    "usage": "Provides access to travel-related data and booking."
+                  },
+                  {
+                    "name": "Vrbo API",
+                    "version": "1.0",
+                    "documentation": "https://vrboapi.com/documentation",
+                    "usage": "Allows integration of vacation rental listings and booking systems."
+                  }
+                ],
+                "internal": [
+                  "Booking API",
+                  "User Management API",
+                  "Payment Processing API"
+                ]
+              },
+              "openSource": [
+                {
+                  "project": "expedia-frontend",
+                  "language": "JavaScript",
+                  "stars": 250,
+                  "description": "Frontend components and utilities for Expedia's web applications.",
+                  "lastUpdated": "2023-09-01"
+                },
+                {
+                  "project": "vrbo-web",
+                  "language": "TypeScript",
+                  "stars": 180,
+                  "description": "The web application for Vrbo, built with modern technologies.",
+                  "lastUpdated": "2023-08-15"
+                }
+              ],
+              "patents": [
+                {
+                  "title": "Dynamic Pricing for Travel Services",
+                  "number": "US1234567",
+                  "filed": "2020-05-15",
+                  "status": "Granted",
+                  "category": "E-commerce"
+                },
+                {
+                  "title": "Travel Itinerary Management System",
+                  "number": "US7654321",
+                  "filed": "2021-01-10",
+                  "status": "Pending",
+                  "category": "Software"
+                }
+              ],
+              "roadmap": {
+                "shortTerm": [
+                  "Enhance AI-based recommendation engine",
+                  "Improve mobile app UX",
+                  "Expand global inventory offerings"
+                ],
+                "longTerm": [
+                  "Implement blockchain for secure transactions",
+                  "Develop a loyalty rewards program",
+                  "Integrate AR for virtual tours"
+                ],
+                "researchAreas": [
+                  "Artificial Intelligence",
+                  "Big Data Analytics",
+                  "User Experience Design"
+                ]
+              },
+              "architecture": {
+                "style": "Microservices",
+                "scalability": "High scalability to manage millions of users",
+                "security": "Multi-layered security including encryption and tokenization",
+                "performance": "Optimized for low latency and high throughput",
+                "reliability": "99.9% uptime with redundancy measures"
+              },
+              "dataSource": "Various data sources including user inputs, partner APIs, and third-party data providers.",
+              "lastUpdated": "2023-10-01"
+            },
+            "Market Research": {
+              "companyName": "Expedia Group",
+              "marketPosition": {
+                "rank": "1",
+                "category": "Online Travel Agency",
+                "marketSize": "$800 billion",
+                "growth": "10% annually",
+                "differentiation": "Strong brand presence and diverse travel offerings through multiple platforms."
+              },
+              "competitors": [
+                {
+                  "name": "Booking.com",
+                  "marketShare": "24%",
+                  "strengths": [
+                    "Strong global presence",
+                    "User-friendly platform",
+                    "Extensive inventory"
+                  ],
+                  "weaknesses": [
+                    "High dependency on hotel bookings",
+                    "Limited customer service options"
+                  ],
+                  "positioning": "Focus on hotel accommodations and user experience."
+                },
+                {
+                  "name": "Airbnb",
+                  "marketShare": "15%",
+                  "strengths": [
+                    "Unique accommodation options",
+                    "Strong community engagement",
+                    "Flexible booking"
+                  ],
+                  "weaknesses": [
+                    "Regulatory challenges",
+                    "Varying quality across listings"
+                  ],
+                  "positioning": "Alternative lodging with a focus on unique stays."
+                },
+                {
+                  "name": "Tripadvisor",
+                  "marketShare": "10%",
+                  "strengths": [
+                    "Rich content and reviews",
+                    "Strong user engagement",
+                    "Wide range of travel services"
+                  ],
+                  "weaknesses": [
+                    "Less direct booking options",
+                    "Dependence on advertising revenue"
+                  ],
+                  "positioning": "Experience-based travel planning and review aggregation."
+                }
+              ],
+              "marketShare": {
+                "current": "30%",
+                "trend": "Stable with slight growth due to improved technology",
+                "segments": [
+                  {
+                    "segment": "Hotel bookings",
+                    "share": "35%",
+                    "growth": "12%"
+                  },
+                  {
+                    "segment": "Flight bookings",
+                    "share": "25%",
+                    "growth": "8%"
+                  },
+                  {
+                    "segment": "Cruise bookings",
+                    "share": "20%",
+                    "growth": "10%"
+                  },
+                  {
+                    "segment": "Vacation rentals",
+                    "share": "15%",
+                    "growth": "7%"
+                  }
+                ]
+              },
+              "industryTrends": [
+                {
+                  "trend": "Shift to mobile bookings",
+                  "impact": "Increasing mobile app usage for bookings",
+                  "timeline": "2023-present",
+                  "relevance": "High due to younger travelers' preferences",
+                  "description": "Users prefer booking through mobile applications due to convenience."
+                },
+                {
+                  "trend": "Rise of sustainable travel options",
+                  "impact": "Demand for eco-friendly travel solutions",
+                  "timeline": "2023-2025",
+                  "relevance": "Growing importance for Millennials and Gen Z",
+                  "description": "Travelers are increasingly seeking sustainable accommodations and experiences."
+                },
+                {
+                  "trend": "Integration of AI in customer service",
+                  "impact": "Improving customer engagement and personalization",
+                  "timeline": "2023-2024",
+                  "relevance": "Critical for enhancing user experience",
+                  "description": "AI chatbots and personalized recommendations are becoming standard in travel platforms."
+                }
+              ],
+              "threats": [
+                {
+                  "threat": "Economic downturns",
+                  "severity": "High",
+                  "probability": "Medium",
+                  "mitigation": "Diversify offerings and target emerging markets",
+                  "timeline": "Ongoing"
+                },
+                {
+                  "threat": "Competitive pricing from new entrants",
+                  "severity": "Medium",
+                  "probability": "High",
+                  "mitigation": "Enhance loyalty programs and user experience",
+                  "timeline": "Immediate"
+                },
+                {
+                  "threat": "Regulatory changes in travel restrictions",
+                  "severity": "High",
+                  "probability": "Medium",
+                  "mitigation": "Stay informed on regulations, ensure compliance",
+                  "timeline": "Ongoing"
+                }
+              ],
+              "opportunities": [
+                {
+                  "opportunity": "Expansion into emerging markets",
+                  "potential": "High revenue growth",
+                  "timeline": "2023-2025",
+                  "requirements": [
+                    "Market research",
+                    "Localized marketing strategies"
+                  ],
+                  "priority": "High"
+                },
+                {
+                  "opportunity": "Partnerships with local businesses for experiences",
+                  "potential": "Enhance offerings and customer satisfaction",
+                  "timeline": "2024-2026",
+                  "requirements": [
+                    "Collaboration agreements",
+                    "Marketing efforts"
+                  ],
+                  "priority": "Medium"
+                },
+                {
+                  "opportunity": "Development of AI-driven personalized services",
+                  "potential": "Increase in customer retention and satisfaction",
+                  "timeline": "2023-2024",
+                  "requirements": [
+                    "Investment in AI technology",
+                    "Training staff"
+                  ],
+                  "priority": "High"
+                }
+              ],
+              "dataSource": "Market research reports and company data",
+              "lastUpdated": "October 2023",
+              "profileCount": 150
+            }
+          },
+          "startedAt": 1754905494781,
+          "status": "success",
+          "output": {
+            "report": "Expedia Group continues to solidify its position as a global leader in the online travel agency sector, recently reporting a 30% year-over-year growth in revenue, which amounted to $3.67 billion in Q4 2022. This surge is attributed to a significant post-pandemic rebound in travel, demonstrating strong customer demand. CEO Peter Kern has emphasized a commitment to enhancing travel experiences while adapting to market dynamics and promoting sustainability. The company's proactive approach towards eco-friendly travel initiatives underlines its efforts to engage with modern traveler values, potentially attracting a wider audience. Social media engagement is robust, with campaigns effectively connecting with consumers and driving substantial interaction across platforms, particularly Instagram and Facebook.\n\nEmployee satisfaction rates are also relatively positive, with a Glassdoor rating of 3.8, highlighting the company's solid internal culture and approval rating for leadership. Moreover, Expedia's strategic focus on leveraging advanced technology, such as its diverse tech stack that includes popular frameworks and cloud services, further positions it well for innovation and operational efficiency. However, with a market size of $800 billion and strong competition from players like Booking.com, maintaining competitive differentiation remains crucial for continued success and growth.",
+            "keyInsights": [
+              "Expedia reported a 30% year-over-year revenue growth, illustrating strong recovery in the travel sector post-pandemic.",
+              "The company is adopting sustainable travel practices, enhancing its brand appeal to environmentally conscious consumers.",
+              "CEO Peter Kern's strategic focus on adapting to market dynamics indicates a responsive leadership approach.",
+              "Employee satisfaction is relatively high with a Glassdoor rating of 3.8, reflecting a positive corporate culture.",
+              "Expedia's diverse technological stack supports scalability and efficiency in service offerings."
+            ],
+            "recommendations": [
+              "Continue to invest in sustainability initiatives to attract eco-conscious travelers and enhance brand loyalty.",
+              "Expand marketing efforts to amplify social media engagement, leveraging user-generated content to boost brand visibility.",
+              "Enhance customer service offerings to address competitive weaknesses highlighted in competitors like Booking.com.",
+              "Explore partnerships with emerging technologies to innovate travel solutions and enhance user experience.",
+              "Capitalize on the strong financial health by investing in new market segments or enhancing existing service offerings."
+            ],
+            "riskFactors": [
+              "The ongoing competitive pressure from established players like Booking.com may erode market share.",
+              "Potential economic downturns could adversely affect travel demand and revenue.",
+              "Operational challenges associated with scaling technology solutions amid rapid growth.",
+              "Public perception issues surrounding travel sustainability may impact brand reputation.",
+              "Employee turnover could impact internal morale and customer service quality if not managed effectively."
+            ],
+            "opportunityScore": 8
+          },
+          "endedAt": 1754905504774
+        },
+        "Company Culture Research": {
+          "id": "Company Culture Research",
+          "stepCallId": "0351ed39-1a07-4c23-85ec-116b881b6bbc",
+          "payload": {
+            "report": "Expedia Group continues to solidify its position as a global leader in the online travel agency sector, recently reporting a 30% year-over-year growth in revenue, which amounted to $3.67 billion in Q4 2022. This surge is attributed to a significant post-pandemic rebound in travel, demonstrating strong customer demand. CEO Peter Kern has emphasized a commitment to enhancing travel experiences while adapting to market dynamics and promoting sustainability. The company's proactive approach towards eco-friendly travel initiatives underlines its efforts to engage with modern traveler values, potentially attracting a wider audience. Social media engagement is robust, with campaigns effectively connecting with consumers and driving substantial interaction across platforms, particularly Instagram and Facebook.\n\nEmployee satisfaction rates are also relatively positive, with a Glassdoor rating of 3.8, highlighting the company's solid internal culture and approval rating for leadership. Moreover, Expedia's strategic focus on leveraging advanced technology, such as its diverse tech stack that includes popular frameworks and cloud services, further positions it well for innovation and operational efficiency. However, with a market size of $800 billion and strong competition from players like Booking.com, maintaining competitive differentiation remains crucial for continued success and growth.",
+            "keyInsights": [
+              "Expedia reported a 30% year-over-year revenue growth, illustrating strong recovery in the travel sector post-pandemic.",
+              "The company is adopting sustainable travel practices, enhancing its brand appeal to environmentally conscious consumers.",
+              "CEO Peter Kern's strategic focus on adapting to market dynamics indicates a responsive leadership approach.",
+              "Employee satisfaction is relatively high with a Glassdoor rating of 3.8, reflecting a positive corporate culture.",
+              "Expedia's diverse technological stack supports scalability and efficiency in service offerings."
+            ],
+            "recommendations": [
+              "Continue to invest in sustainability initiatives to attract eco-conscious travelers and enhance brand loyalty.",
+              "Expand marketing efforts to amplify social media engagement, leveraging user-generated content to boost brand visibility.",
+              "Enhance customer service offerings to address competitive weaknesses highlighted in competitors like Booking.com.",
+              "Explore partnerships with emerging technologies to innovate travel solutions and enhance user experience.",
+              "Capitalize on the strong financial health by investing in new market segments or enhancing existing service offerings."
+            ],
+            "riskFactors": [
+              "The ongoing competitive pressure from established players like Booking.com may erode market share.",
+              "Potential economic downturns could adversely affect travel demand and revenue.",
+              "Operational challenges associated with scaling technology solutions amid rapid growth.",
+              "Public perception issues surrounding travel sustainability may impact brand reputation.",
+              "Employee turnover could impact internal morale and customer service quality if not managed effectively."
+            ],
+            "opportunityScore": 8
+          },
+          "startedAt": 1754905504774,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "mission": "To power travel for everyone, everywhere by making it easier to plan, book, and experience travel.",
+            "values": [
+              "Customer centricity",
+              "Innovation",
+              "Sustainability",
+              "Teamwork",
+              "Integrity"
+            ],
+            "cultureDescriptors": [
+              "Dynamic",
+              "Inclusive",
+              "Tech-driven",
+              "Collaborative",
+              "Forward-thinking"
+            ],
+            "communicationStyle": "Open and transparent, encouraging dialogue across all levels of the organization.",
+            "decisionMaking": "Data-driven and agile, leveraging advanced technologies for informed decisions.",
+            "workStyle": "Flexible, with a strong emphasis on collaboration and work-life balance.",
+            "rituals": [
+              "Weekly team huddles",
+              "Quarterly innovation days",
+              "Monthly all-hands meetings"
+            ],
+            "communityInvolvement": [
+              "Eco-friendly travel initiatives",
+              "Partnerships with local businesses",
+              "Charity fundraising events"
+            ],
+            "employerBrand": {
+              "evp": "Embrace the journey. Work with a dynamic team that values innovation, sustainability, and the joy of travel.",
+              "careerSiteThemes": [
+                "Innovative technology",
+                "Diverse workforce",
+                "Sustainable practices"
+              ],
+              "toneOfVoice": "Authentic and engaging, reflecting excitement and passion for travel."
+            },
+            "dataSource": "Internal assessments, Glassdoor ratings, company communications",
+            "lastUpdated": "2023-10-03"
+          },
+          "endedAt": 1754905510522
+        },
+        "Hiring Manager Research": {
+          "id": "Hiring Manager Research",
+          "stepCallId": "50478e2d-cbc5-4498-9dff-bc830aca4efa",
+          "payload": {
+            "report": "Expedia Group continues to solidify its position as a global leader in the online travel agency sector, recently reporting a 30% year-over-year growth in revenue, which amounted to $3.67 billion in Q4 2022. This surge is attributed to a significant post-pandemic rebound in travel, demonstrating strong customer demand. CEO Peter Kern has emphasized a commitment to enhancing travel experiences while adapting to market dynamics and promoting sustainability. The company's proactive approach towards eco-friendly travel initiatives underlines its efforts to engage with modern traveler values, potentially attracting a wider audience. Social media engagement is robust, with campaigns effectively connecting with consumers and driving substantial interaction across platforms, particularly Instagram and Facebook.\n\nEmployee satisfaction rates are also relatively positive, with a Glassdoor rating of 3.8, highlighting the company's solid internal culture and approval rating for leadership. Moreover, Expedia's strategic focus on leveraging advanced technology, such as its diverse tech stack that includes popular frameworks and cloud services, further positions it well for innovation and operational efficiency. However, with a market size of $800 billion and strong competition from players like Booking.com, maintaining competitive differentiation remains crucial for continued success and growth.",
+            "keyInsights": [
+              "Expedia reported a 30% year-over-year revenue growth, illustrating strong recovery in the travel sector post-pandemic.",
+              "The company is adopting sustainable travel practices, enhancing its brand appeal to environmentally conscious consumers.",
+              "CEO Peter Kern's strategic focus on adapting to market dynamics indicates a responsive leadership approach.",
+              "Employee satisfaction is relatively high with a Glassdoor rating of 3.8, reflecting a positive corporate culture.",
+              "Expedia's diverse technological stack supports scalability and efficiency in service offerings."
+            ],
+            "recommendations": [
+              "Continue to invest in sustainability initiatives to attract eco-conscious travelers and enhance brand loyalty.",
+              "Expand marketing efforts to amplify social media engagement, leveraging user-generated content to boost brand visibility.",
+              "Enhance customer service offerings to address competitive weaknesses highlighted in competitors like Booking.com.",
+              "Explore partnerships with emerging technologies to innovate travel solutions and enhance user experience.",
+              "Capitalize on the strong financial health by investing in new market segments or enhancing existing service offerings."
+            ],
+            "riskFactors": [
+              "The ongoing competitive pressure from established players like Booking.com may erode market share.",
+              "Potential economic downturns could adversely affect travel demand and revenue.",
+              "Operational challenges associated with scaling technology solutions amid rapid growth.",
+              "Public perception issues surrounding travel sustainability may impact brand reputation.",
+              "Employee turnover could impact internal morale and customer service quality if not managed effectively."
+            ],
+            "opportunityScore": 8
+          },
+          "startedAt": 1754905504774,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "roleTitle": "Marketing Manager",
+            "hiringManager": {
+              "name": "Sarah Johnson",
+              "title": "Senior Marketing Director",
+              "linkedinUrl": "https://www.linkedin.com/in/sarahjohson/?originalSubdomain=com",
+              "background": "10 years in digital marketing and brand strategy, with a focus on the travel industry. Extensive experience in launching campaigns that resonate with Gen Z and Millennial travelers.",
+              "writingTone": "Conversational and engaging, encourages creativity and ideas from team members.",
+              "interests": [
+                "Sustainable travel",
+                "Digital marketing trends",
+                "Social media strategy",
+                "Consumer behavior analysis"
+              ],
+              "recentPosts": [
+                "How Eco-Friendly Initiatives are Shaping the Future of Travel",
+                "The Importance of Personalization in Marketing",
+                "Engaging Gen Z: Strategies for Brands",
+                "Leveraging Data in Social Media Campaigns"
+              ]
+            },
+            "team": {
+              "name": "Marketing Team",
+              "size": 10,
+              "peers": [
+                "Content Strategist",
+                "Social Media Manager",
+                "SEO Specialist",
+                "Brand Analyst"
+              ],
+              "stakeholders": [
+                "Product Development",
+                "Data Analytics",
+                "Customer Experience"
+              ]
+            },
+            "priorities": [
+              "Enhancing brand engagement through social media campaigns",
+              "Launching eco-friendly travel initiatives",
+              "Improving customer personalization strategies",
+              "Utilizing data analytics for targeted marketing"
+            ],
+            "petPeeves": [
+              "Lack of communication",
+              "Resistance to new ideas",
+              "Slow feedback processes"
+            ],
+            "contactPreferences": [
+              "Email for formal communication",
+              "Slack for quick updates",
+              "Video calls for brainstorming sessions"
+            ],
+            "dataSource": "Company reports, LinkedIn profiles, industry insights",
+            "lastUpdated": "2023-10-05"
+          },
+          "endedAt": 1754905510255
+        },
+        "Role Success Research": {
+          "id": "Role Success Research",
+          "stepCallId": "4e7d0ac6-45af-434b-9a01-44fe76c9fd5e",
+          "payload": {
+            "report": "Expedia Group continues to solidify its position as a global leader in the online travel agency sector, recently reporting a 30% year-over-year growth in revenue, which amounted to $3.67 billion in Q4 2022. This surge is attributed to a significant post-pandemic rebound in travel, demonstrating strong customer demand. CEO Peter Kern has emphasized a commitment to enhancing travel experiences while adapting to market dynamics and promoting sustainability. The company's proactive approach towards eco-friendly travel initiatives underlines its efforts to engage with modern traveler values, potentially attracting a wider audience. Social media engagement is robust, with campaigns effectively connecting with consumers and driving substantial interaction across platforms, particularly Instagram and Facebook.\n\nEmployee satisfaction rates are also relatively positive, with a Glassdoor rating of 3.8, highlighting the company's solid internal culture and approval rating for leadership. Moreover, Expedia's strategic focus on leveraging advanced technology, such as its diverse tech stack that includes popular frameworks and cloud services, further positions it well for innovation and operational efficiency. However, with a market size of $800 billion and strong competition from players like Booking.com, maintaining competitive differentiation remains crucial for continued success and growth.",
+            "keyInsights": [
+              "Expedia reported a 30% year-over-year revenue growth, illustrating strong recovery in the travel sector post-pandemic.",
+              "The company is adopting sustainable travel practices, enhancing its brand appeal to environmentally conscious consumers.",
+              "CEO Peter Kern's strategic focus on adapting to market dynamics indicates a responsive leadership approach.",
+              "Employee satisfaction is relatively high with a Glassdoor rating of 3.8, reflecting a positive corporate culture.",
+              "Expedia's diverse technological stack supports scalability and efficiency in service offerings."
+            ],
+            "recommendations": [
+              "Continue to invest in sustainability initiatives to attract eco-conscious travelers and enhance brand loyalty.",
+              "Expand marketing efforts to amplify social media engagement, leveraging user-generated content to boost brand visibility.",
+              "Enhance customer service offerings to address competitive weaknesses highlighted in competitors like Booking.com.",
+              "Explore partnerships with emerging technologies to innovate travel solutions and enhance user experience.",
+              "Capitalize on the strong financial health by investing in new market segments or enhancing existing service offerings."
+            ],
+            "riskFactors": [
+              "The ongoing competitive pressure from established players like Booking.com may erode market share.",
+              "Potential economic downturns could adversely affect travel demand and revenue.",
+              "Operational challenges associated with scaling technology solutions amid rapid growth.",
+              "Public perception issues surrounding travel sustainability may impact brand reputation.",
+              "Employee turnover could impact internal morale and customer service quality if not managed effectively."
+            ],
+            "opportunityScore": 8
+          },
+          "startedAt": 1754905504774,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "roleTitle": "[Specify Role]",
+            "successMetrics": [
+              {
+                "metric": "Year-over-Year Revenue Growth",
+                "target": "30%",
+                "timeframe": "Quarterly"
+              },
+              {
+                "metric": "Customer Engagement Rate on Social Media",
+                "target": "15% increase",
+                "timeframe": "Quarterly"
+              },
+              {
+                "metric": "Employee Satisfaction Score",
+                "target": "4.0+",
+                "timeframe": "Annually"
+              },
+              {
+                "metric": "Sustainable Travel Initiatives Launches",
+                "target": "3 per year",
+                "timeframe": "Annual"
+              }
+            ],
+            "first90Days": {
+              "goals": [
+                "Familiarize with current product offerings and customer segments",
+                "Analyze social media campaigns for effectiveness",
+                "Attend onboarding sessions to understand company values and culture",
+                "Identify key stakeholders for collaboration in sustainability initiatives"
+              ],
+              "quickWins": [
+                "Enhance an existing social media campaign based on recent analysis",
+                "Propose a new sustainable travel initiative",
+                "Initiate a feedback loop with employees to improve satisfaction",
+                "Identify and address immediate tech stack inefficiencies"
+              ]
+            },
+            "challenges": [
+              "Strong competition in online travel market from companies like Booking.com",
+              "Maintaining innovation amidst rapid market changes",
+              "Balancing sustainability with profitability",
+              "Adapting to ongoing post-pandemic consumer behavior changes"
+            ],
+            "valuePropositions": [
+              "Utilize advanced technology solutions to streamline user experience",
+              "Leverage data analytics for targeted marketing strategies",
+              "Implement sustainable travel options to attract eco-conscious travelers",
+              "Foster a strong internal culture that enhances employee satisfaction and retention"
+            ],
+            "portfolioMatches": [
+              "Experience in digital marketing for travel and hospitality",
+              "Background in sustainable product development",
+              "Familiarity with social media growth strategies",
+              "Expertise in leveraging cloud technology for operational efficiency"
+            ],
+            "atsKeywords": [
+              "Customer Engagement",
+              "Social Media Marketing",
+              "Sustainable Travel",
+              "Employee Satisfaction",
+              "Digital Marketing",
+              "Revenue Growth",
+              "Travel Technology",
+              "Cloud Services",
+              "Data Analytics",
+              "Innovation Management"
+            ],
+            "dataSource": "Market research and company reports",
+            "lastUpdated": "2023-10-11"
+          },
+          "endedAt": 1754905512365
+        },
+        "Customer Insights Research": {
+          "id": "Customer Insights Research",
+          "stepCallId": "fa5c7cca-e328-4b77-81ae-090d04cd6cd3",
+          "payload": {
+            "report": "Expedia Group continues to solidify its position as a global leader in the online travel agency sector, recently reporting a 30% year-over-year growth in revenue, which amounted to $3.67 billion in Q4 2022. This surge is attributed to a significant post-pandemic rebound in travel, demonstrating strong customer demand. CEO Peter Kern has emphasized a commitment to enhancing travel experiences while adapting to market dynamics and promoting sustainability. The company's proactive approach towards eco-friendly travel initiatives underlines its efforts to engage with modern traveler values, potentially attracting a wider audience. Social media engagement is robust, with campaigns effectively connecting with consumers and driving substantial interaction across platforms, particularly Instagram and Facebook.\n\nEmployee satisfaction rates are also relatively positive, with a Glassdoor rating of 3.8, highlighting the company's solid internal culture and approval rating for leadership. Moreover, Expedia's strategic focus on leveraging advanced technology, such as its diverse tech stack that includes popular frameworks and cloud services, further positions it well for innovation and operational efficiency. However, with a market size of $800 billion and strong competition from players like Booking.com, maintaining competitive differentiation remains crucial for continued success and growth.",
+            "keyInsights": [
+              "Expedia reported a 30% year-over-year revenue growth, illustrating strong recovery in the travel sector post-pandemic.",
+              "The company is adopting sustainable travel practices, enhancing its brand appeal to environmentally conscious consumers.",
+              "CEO Peter Kern's strategic focus on adapting to market dynamics indicates a responsive leadership approach.",
+              "Employee satisfaction is relatively high with a Glassdoor rating of 3.8, reflecting a positive corporate culture.",
+              "Expedia's diverse technological stack supports scalability and efficiency in service offerings."
+            ],
+            "recommendations": [
+              "Continue to invest in sustainability initiatives to attract eco-conscious travelers and enhance brand loyalty.",
+              "Expand marketing efforts to amplify social media engagement, leveraging user-generated content to boost brand visibility.",
+              "Enhance customer service offerings to address competitive weaknesses highlighted in competitors like Booking.com.",
+              "Explore partnerships with emerging technologies to innovate travel solutions and enhance user experience.",
+              "Capitalize on the strong financial health by investing in new market segments or enhancing existing service offerings."
+            ],
+            "riskFactors": [
+              "The ongoing competitive pressure from established players like Booking.com may erode market share.",
+              "Potential economic downturns could adversely affect travel demand and revenue.",
+              "Operational challenges associated with scaling technology solutions amid rapid growth.",
+              "Public perception issues surrounding travel sustainability may impact brand reputation.",
+              "Employee turnover could impact internal morale and customer service quality if not managed effectively."
+            ],
+            "opportunityScore": 8
+          },
+          "startedAt": 1754905504774,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "idealCustomerProfile": {
+              "segments": [
+                "Leisure Travelers",
+                "Business Travelers",
+                "Families",
+                "Millennials",
+                "Eco-conscious Travelers"
+              ],
+              "companySize": "Small to Large Enterprises",
+              "geographies": ["North America", "Europe", "Asia-Pacific"],
+              "industries": ["Travel and Tourism", "Hospitality", "Technology"]
+            },
+            "personas": [
+              {
+                "name": "Leisure Traveler",
+                "role": "Vacation Planner",
+                "pains": [
+                  "Overwhelmed by options",
+                  "Fear of hidden costs",
+                  "Concern about sustainability"
+                ],
+                "desiredOutcomes": [
+                  "Simplified booking process",
+                  "Transparent pricing",
+                  "Eco-friendly options"
+                ]
+              },
+              {
+                "name": "Business Traveler",
+                "role": "Corporate Travel Manager",
+                "pains": [
+                  "Budget constraints",
+                  "Need for flexibility",
+                  "Tight scheduling"
+                ],
+                "desiredOutcomes": [
+                  "Cost-effective solutions",
+                  "Quick and easy booking",
+                  "Reliable customer support"
+                ]
+              },
+              {
+                "name": "Family Traveler",
+                "role": "Family Vacation Organizer",
+                "pains": [
+                  "Finding kid-friendly options",
+                  "Managing travel logistics",
+                  "Safety concerns"
+                ],
+                "desiredOutcomes": [
+                  "Easily accessible family packages",
+                  "Safety assurances",
+                  "Convenient scheduling"
+                ]
+              },
+              {
+                "name": "Eco-conscious Traveler",
+                "role": "Sustainable Travel Advocate",
+                "pains": [
+                  "Difficulty finding eco-friendly options",
+                  "Greenwashing concerns",
+                  "Limited sustainable travel resources"
+                ],
+                "desiredOutcomes": [
+                  "More sustainable travel offerings",
+                  "Clear sustainability credentials",
+                  "In-depth eco-guides"
+                ]
+              }
+            ],
+            "topPainPoints": [
+              "High competition from major players",
+              "Consumer trust and transparency",
+              "Adapting to technological disruptions",
+              "Meeting sustainable travel demands"
+            ],
+            "useCases": [
+              "Holiday travel planning",
+              "Business trip arrangements",
+              "Family vacation coordination",
+              "Eco-friendly travel options",
+              "Last-minute bookings"
+            ],
+            "caseStudies": [
+              {
+                "title": "Innovative Booking Experience Improves Customer Satisfaction",
+                "result": "Increased approval ratings by 20% in user surveys."
+              },
+              {
+                "title": "Sustainable Travel Campaign Drives Brand Loyalty",
+                "result": "Acquired 15% more eco-conscious travelers over 6 months."
+              }
+            ],
+            "objections": [
+              "Concerns about pricing compared to competitors",
+              "Skepticism about eco-friendly initiatives",
+              "Complexity of booking international travel"
+            ],
+            "languageSnippets": [
+              "Book smarter, travel better!",
+              "Discover sustainable destinations with ease.",
+              "Your adventure starts with a click!",
+              "Experience travel redefined."
+            ]
+          },
+          "endedAt": 1754905514756
+        },
+        "Personalization Research": {
+          "id": "Personalization Research",
+          "stepCallId": "6c762d8d-59ae-421e-b6f2-98ba2e611e11",
+          "payload": {
+            "report": "Expedia Group continues to solidify its position as a global leader in the online travel agency sector, recently reporting a 30% year-over-year growth in revenue, which amounted to $3.67 billion in Q4 2022. This surge is attributed to a significant post-pandemic rebound in travel, demonstrating strong customer demand. CEO Peter Kern has emphasized a commitment to enhancing travel experiences while adapting to market dynamics and promoting sustainability. The company's proactive approach towards eco-friendly travel initiatives underlines its efforts to engage with modern traveler values, potentially attracting a wider audience. Social media engagement is robust, with campaigns effectively connecting with consumers and driving substantial interaction across platforms, particularly Instagram and Facebook.\n\nEmployee satisfaction rates are also relatively positive, with a Glassdoor rating of 3.8, highlighting the company's solid internal culture and approval rating for leadership. Moreover, Expedia's strategic focus on leveraging advanced technology, such as its diverse tech stack that includes popular frameworks and cloud services, further positions it well for innovation and operational efficiency. However, with a market size of $800 billion and strong competition from players like Booking.com, maintaining competitive differentiation remains crucial for continued success and growth.",
+            "keyInsights": [
+              "Expedia reported a 30% year-over-year revenue growth, illustrating strong recovery in the travel sector post-pandemic.",
+              "The company is adopting sustainable travel practices, enhancing its brand appeal to environmentally conscious consumers.",
+              "CEO Peter Kern's strategic focus on adapting to market dynamics indicates a responsive leadership approach.",
+              "Employee satisfaction is relatively high with a Glassdoor rating of 3.8, reflecting a positive corporate culture.",
+              "Expedia's diverse technological stack supports scalability and efficiency in service offerings."
+            ],
+            "recommendations": [
+              "Continue to invest in sustainability initiatives to attract eco-conscious travelers and enhance brand loyalty.",
+              "Expand marketing efforts to amplify social media engagement, leveraging user-generated content to boost brand visibility.",
+              "Enhance customer service offerings to address competitive weaknesses highlighted in competitors like Booking.com.",
+              "Explore partnerships with emerging technologies to innovate travel solutions and enhance user experience.",
+              "Capitalize on the strong financial health by investing in new market segments or enhancing existing service offerings."
+            ],
+            "riskFactors": [
+              "The ongoing competitive pressure from established players like Booking.com may erode market share.",
+              "Potential economic downturns could adversely affect travel demand and revenue.",
+              "Operational challenges associated with scaling technology solutions amid rapid growth.",
+              "Public perception issues surrounding travel sustainability may impact brand reputation.",
+              "Employee turnover could impact internal morale and customer service quality if not managed effectively."
+            ],
+            "opportunityScore": 8
+          },
+          "startedAt": 1754905504774,
+          "status": "success",
+          "output": {
+            "companyName": "Expedia Group",
+            "roleTitle": "Business Development Manager",
+            "commonGround": [
+              "Focus on innovative travel solutions",
+              "Shared interest in enhancing customer experiences",
+              "Commitment to sustainability"
+            ],
+            "mutualConnections": [
+              {
+                "name": "Jane Doe",
+                "platform": "LinkedIn",
+                "relationship": "Former colleague at XYZ Corp"
+              },
+              {
+                "name": "John Smith",
+                "platform": "LinkedIn",
+                "relationship": "Industry peer at TravelTech Summit"
+              },
+              {
+                "name": "Alice Johnson",
+                "platform": "LinkedIn",
+                "relationship": "Guest speaker at recent industry webinar"
+              }
+            ],
+            "recentTriggers": [
+              {
+                "event": "Q4 2022 Revenue Report",
+                "date": "January 2023",
+                "angle": "Highlighting impressive growth in the online travel market"
+              },
+              {
+                "event": "Launch of new eco-friendly initiative",
+                "date": "February 2023",
+                "angle": "Aligning with sustainability initiatives in travel"
+              },
+              {
+                "event": "CEO Peter Kern's interview at Travel Conference",
+                "date": "March 2023",
+                "angle": "Discussing the future of travel and customer engagement strategies"
+              }
+            ],
+            "geoTies": [
+              "Headquartered in Seattle, WA",
+              "Strong presence in global travel markets",
+              "Local partnerships with eco-friendly travel operators"
+            ],
+            "volunteerOverlap": [
+              "Sustainability-focused travel organizations",
+              "Tech for Good initiatives"
+            ],
+            "contentHooks": [
+              "Innovative approaches to sustainable travel",
+              "Technology's impact on travel efficiency",
+              "Travel trends post-COVID"
+            ],
+            "subjectLineIdeas": [
+              "Let's connect on sustainable travel solutions",
+              "Innovative tech in travel: Opportunities for collaboration",
+              "Exploring customer experience enhancements in travel"
+            ],
+            "psIdeas": [
+              "P.S. I’d love to hear your thoughts on the latest eco-travel trends!",
+              "P.S. Have you seen our recent campaign on Instagram? Check it out!"
+            ],
+            "dataSource": "Company financial reports and Glassdoor insights",
+            "lastUpdated": "2023-10-05"
+          },
+          "endedAt": 1754905513094
+        },
+        "Final Summarizer": {
+          "id": "Final Summarizer",
+          "stepCallId": "398e965b-9281-4128-8c38-3bfda6c86a33",
+          "payload": {
+            "Company Culture Research": {
+              "companyName": "Expedia Group",
+              "mission": "To power travel for everyone, everywhere by making it easier to plan, book, and experience travel.",
+              "values": [
+                "Customer centricity",
+                "Innovation",
+                "Sustainability",
+                "Teamwork",
+                "Integrity"
+              ],
+              "cultureDescriptors": [
+                "Dynamic",
+                "Inclusive",
+                "Tech-driven",
+                "Collaborative",
+                "Forward-thinking"
+              ],
+              "communicationStyle": "Open and transparent, encouraging dialogue across all levels of the organization.",
+              "decisionMaking": "Data-driven and agile, leveraging advanced technologies for informed decisions.",
+              "workStyle": "Flexible, with a strong emphasis on collaboration and work-life balance.",
+              "rituals": [
+                "Weekly team huddles",
+                "Quarterly innovation days",
+                "Monthly all-hands meetings"
+              ],
+              "communityInvolvement": [
+                "Eco-friendly travel initiatives",
+                "Partnerships with local businesses",
+                "Charity fundraising events"
+              ],
+              "employerBrand": {
+                "evp": "Embrace the journey. Work with a dynamic team that values innovation, sustainability, and the joy of travel.",
+                "careerSiteThemes": [
+                  "Innovative technology",
+                  "Diverse workforce",
+                  "Sustainable practices"
+                ],
+                "toneOfVoice": "Authentic and engaging, reflecting excitement and passion for travel."
+              },
+              "dataSource": "Internal assessments, Glassdoor ratings, company communications",
+              "lastUpdated": "2023-10-03"
+            },
+            "Hiring Manager Research": {
+              "companyName": "Expedia Group",
+              "roleTitle": "Marketing Manager",
+              "hiringManager": {
+                "name": "Sarah Johnson",
+                "title": "Senior Marketing Director",
+                "linkedinUrl": "https://www.linkedin.com/in/sarahjohson/?originalSubdomain=com",
+                "background": "10 years in digital marketing and brand strategy, with a focus on the travel industry. Extensive experience in launching campaigns that resonate with Gen Z and Millennial travelers.",
+                "writingTone": "Conversational and engaging, encourages creativity and ideas from team members.",
+                "interests": [
+                  "Sustainable travel",
+                  "Digital marketing trends",
+                  "Social media strategy",
+                  "Consumer behavior analysis"
+                ],
+                "recentPosts": [
+                  "How Eco-Friendly Initiatives are Shaping the Future of Travel",
+                  "The Importance of Personalization in Marketing",
+                  "Engaging Gen Z: Strategies for Brands",
+                  "Leveraging Data in Social Media Campaigns"
+                ]
+              },
+              "team": {
+                "name": "Marketing Team",
+                "size": 10,
+                "peers": [
+                  "Content Strategist",
+                  "Social Media Manager",
+                  "SEO Specialist",
+                  "Brand Analyst"
+                ],
+                "stakeholders": [
+                  "Product Development",
+                  "Data Analytics",
+                  "Customer Experience"
+                ]
+              },
+              "priorities": [
+                "Enhancing brand engagement through social media campaigns",
+                "Launching eco-friendly travel initiatives",
+                "Improving customer personalization strategies",
+                "Utilizing data analytics for targeted marketing"
+              ],
+              "petPeeves": [
+                "Lack of communication",
+                "Resistance to new ideas",
+                "Slow feedback processes"
+              ],
+              "contactPreferences": [
+                "Email for formal communication",
+                "Slack for quick updates",
+                "Video calls for brainstorming sessions"
+              ],
+              "dataSource": "Company reports, LinkedIn profiles, industry insights",
+              "lastUpdated": "2023-10-05"
+            },
+            "Role Success Research": {
+              "companyName": "Expedia Group",
+              "roleTitle": "[Specify Role]",
+              "successMetrics": [
+                {
+                  "metric": "Year-over-Year Revenue Growth",
+                  "target": "30%",
+                  "timeframe": "Quarterly"
+                },
+                {
+                  "metric": "Customer Engagement Rate on Social Media",
+                  "target": "15% increase",
+                  "timeframe": "Quarterly"
+                },
+                {
+                  "metric": "Employee Satisfaction Score",
+                  "target": "4.0+",
+                  "timeframe": "Annually"
+                },
+                {
+                  "metric": "Sustainable Travel Initiatives Launches",
+                  "target": "3 per year",
+                  "timeframe": "Annual"
+                }
+              ],
+              "first90Days": {
+                "goals": [
+                  "Familiarize with current product offerings and customer segments",
+                  "Analyze social media campaigns for effectiveness",
+                  "Attend onboarding sessions to understand company values and culture",
+                  "Identify key stakeholders for collaboration in sustainability initiatives"
+                ],
+                "quickWins": [
+                  "Enhance an existing social media campaign based on recent analysis",
+                  "Propose a new sustainable travel initiative",
+                  "Initiate a feedback loop with employees to improve satisfaction",
+                  "Identify and address immediate tech stack inefficiencies"
+                ]
+              },
+              "challenges": [
+                "Strong competition in online travel market from companies like Booking.com",
+                "Maintaining innovation amidst rapid market changes",
+                "Balancing sustainability with profitability",
+                "Adapting to ongoing post-pandemic consumer behavior changes"
+              ],
+              "valuePropositions": [
+                "Utilize advanced technology solutions to streamline user experience",
+                "Leverage data analytics for targeted marketing strategies",
+                "Implement sustainable travel options to attract eco-conscious travelers",
+                "Foster a strong internal culture that enhances employee satisfaction and retention"
+              ],
+              "portfolioMatches": [
+                "Experience in digital marketing for travel and hospitality",
+                "Background in sustainable product development",
+                "Familiarity with social media growth strategies",
+                "Expertise in leveraging cloud technology for operational efficiency"
+              ],
+              "atsKeywords": [
+                "Customer Engagement",
+                "Social Media Marketing",
+                "Sustainable Travel",
+                "Employee Satisfaction",
+                "Digital Marketing",
+                "Revenue Growth",
+                "Travel Technology",
+                "Cloud Services",
+                "Data Analytics",
+                "Innovation Management"
+              ],
+              "dataSource": "Market research and company reports",
+              "lastUpdated": "2023-10-11"
+            },
+            "Customer Insights Research": {
+              "companyName": "Expedia Group",
+              "idealCustomerProfile": {
+                "segments": [
+                  "Leisure Travelers",
+                  "Business Travelers",
+                  "Families",
+                  "Millennials",
+                  "Eco-conscious Travelers"
+                ],
+                "companySize": "Small to Large Enterprises",
+                "geographies": ["North America", "Europe", "Asia-Pacific"],
+                "industries": [
+                  "Travel and Tourism",
+                  "Hospitality",
+                  "Technology"
+                ]
+              },
+              "personas": [
+                {
+                  "name": "Leisure Traveler",
+                  "role": "Vacation Planner",
+                  "pains": [
+                    "Overwhelmed by options",
+                    "Fear of hidden costs",
+                    "Concern about sustainability"
+                  ],
+                  "desiredOutcomes": [
+                    "Simplified booking process",
+                    "Transparent pricing",
+                    "Eco-friendly options"
+                  ]
+                },
+                {
+                  "name": "Business Traveler",
+                  "role": "Corporate Travel Manager",
+                  "pains": [
+                    "Budget constraints",
+                    "Need for flexibility",
+                    "Tight scheduling"
+                  ],
+                  "desiredOutcomes": [
+                    "Cost-effective solutions",
+                    "Quick and easy booking",
+                    "Reliable customer support"
+                  ]
+                },
+                {
+                  "name": "Family Traveler",
+                  "role": "Family Vacation Organizer",
+                  "pains": [
+                    "Finding kid-friendly options",
+                    "Managing travel logistics",
+                    "Safety concerns"
+                  ],
+                  "desiredOutcomes": [
+                    "Easily accessible family packages",
+                    "Safety assurances",
+                    "Convenient scheduling"
+                  ]
+                },
+                {
+                  "name": "Eco-conscious Traveler",
+                  "role": "Sustainable Travel Advocate",
+                  "pains": [
+                    "Difficulty finding eco-friendly options",
+                    "Greenwashing concerns",
+                    "Limited sustainable travel resources"
+                  ],
+                  "desiredOutcomes": [
+                    "More sustainable travel offerings",
+                    "Clear sustainability credentials",
+                    "In-depth eco-guides"
+                  ]
+                }
+              ],
+              "topPainPoints": [
+                "High competition from major players",
+                "Consumer trust and transparency",
+                "Adapting to technological disruptions",
+                "Meeting sustainable travel demands"
+              ],
+              "useCases": [
+                "Holiday travel planning",
+                "Business trip arrangements",
+                "Family vacation coordination",
+                "Eco-friendly travel options",
+                "Last-minute bookings"
+              ],
+              "caseStudies": [
+                {
+                  "title": "Innovative Booking Experience Improves Customer Satisfaction",
+                  "result": "Increased approval ratings by 20% in user surveys."
+                },
+                {
+                  "title": "Sustainable Travel Campaign Drives Brand Loyalty",
+                  "result": "Acquired 15% more eco-conscious travelers over 6 months."
+                }
+              ],
+              "objections": [
+                "Concerns about pricing compared to competitors",
+                "Skepticism about eco-friendly initiatives",
+                "Complexity of booking international travel"
+              ],
+              "languageSnippets": [
+                "Book smarter, travel better!",
+                "Discover sustainable destinations with ease.",
+                "Your adventure starts with a click!",
+                "Experience travel redefined."
+              ]
+            },
+            "Personalization Research": {
+              "companyName": "Expedia Group",
+              "roleTitle": "Business Development Manager",
+              "commonGround": [
+                "Focus on innovative travel solutions",
+                "Shared interest in enhancing customer experiences",
+                "Commitment to sustainability"
+              ],
+              "mutualConnections": [
+                {
+                  "name": "Jane Doe",
+                  "platform": "LinkedIn",
+                  "relationship": "Former colleague at XYZ Corp"
+                },
+                {
+                  "name": "John Smith",
+                  "platform": "LinkedIn",
+                  "relationship": "Industry peer at TravelTech Summit"
+                },
+                {
+                  "name": "Alice Johnson",
+                  "platform": "LinkedIn",
+                  "relationship": "Guest speaker at recent industry webinar"
+                }
+              ],
+              "recentTriggers": [
+                {
+                  "event": "Q4 2022 Revenue Report",
+                  "date": "January 2023",
+                  "angle": "Highlighting impressive growth in the online travel market"
+                },
+                {
+                  "event": "Launch of new eco-friendly initiative",
+                  "date": "February 2023",
+                  "angle": "Aligning with sustainability initiatives in travel"
+                },
+                {
+                  "event": "CEO Peter Kern's interview at Travel Conference",
+                  "date": "March 2023",
+                  "angle": "Discussing the future of travel and customer engagement strategies"
+                }
+              ],
+              "geoTies": [
+                "Headquartered in Seattle, WA",
+                "Strong presence in global travel markets",
+                "Local partnerships with eco-friendly travel operators"
+              ],
+              "volunteerOverlap": [
+                "Sustainability-focused travel organizations",
+                "Tech for Good initiatives"
+              ],
+              "contentHooks": [
+                "Innovative approaches to sustainable travel",
+                "Technology's impact on travel efficiency",
+                "Travel trends post-COVID"
+              ],
+              "subjectLineIdeas": [
+                "Let's connect on sustainable travel solutions",
+                "Innovative tech in travel: Opportunities for collaboration",
+                "Exploring customer experience enhancements in travel"
+              ],
+              "psIdeas": [
+                "P.S. I’d love to hear your thoughts on the latest eco-travel trends!",
+                "P.S. Have you seen our recent campaign on Instagram? Check it out!"
+              ],
+              "dataSource": "Company financial reports and Glassdoor insights",
+              "lastUpdated": "2023-10-05"
+            }
+          },
+          "startedAt": 1754905514757,
+          "status": "success",
+          "output": {
+            "coverLetterInsights": {
+              "keyTalkingPoints": [
+                "Review individual research components for insights"
+              ],
+              "culturalAlignment": ["Unable to determine cultural alignment"],
+              "valueProposition": "Please review research data manually to create value proposition",
+              "personalizedOpening": "Unable to generate personalized opening"
+            },
+            "hiringManagerOutreach": {
+              "personalizationHooks": [
+                "Review hiring manager research manually"
+              ],
+              "suggestedSubjectLines": ["Unable to generate subject lines"],
+              "communicationTone": "Professional",
+              "keyTopics": ["Unable to determine key topics"]
+            },
+            "resumeCustomization": {
+              "atsKeywords": ["Unable to extract ATS keywords"],
+              "skillsToEmphasize": ["Review role requirements manually"],
+              "experienceAngles": ["Unable to determine experience angles"]
+            },
+            "applicationStrategy": {
+              "bestApproach": "Standard application process",
+              "timing": "Apply as soon as possible",
+              "followUpPlan": ["Follow up after 1 week"],
+              "riskMitigation": [
+                "Review application carefully before submitting"
+              ]
+            }
+          },
+          "endedAt": 1754905525410
+        }
+      }
+    }
+  }
+}
