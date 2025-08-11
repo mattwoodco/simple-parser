@@ -39,25 +39,180 @@ const synthesisSchema = z.object({
   opportunityScore: z.number(),
 });
 
+// Precompiled regexes for markdown code block stripping
+const MD_JSON_OPEN_RE = /^```json\s*\n?/;
+const MD_CODE_CLOSE_RE = /\n?\s*```$/;
+const MD_OPEN_RE = /^```\s*\n?/;
+
+interface ZodInternalDef {
+  typeName?: string;
+  shape?: () => Record<string, unknown>;
+  innerType?: unknown;
+  values?: unknown[];
+}
+
+// Helper intentionally kept for future normalization across tools
+// function extractAgentText(result: unknown): string { /* unused for now */ return String((result as any)?.text ?? result ?? ''); }
+
 function parseJsonWithSchema<TSchema extends z.ZodType<unknown>>(
   text: string,
   schema: TSchema
 ): z.infer<TSchema> {
   try {
-    const json = JSON.parse(text);
+    let cleanText = text.trim();
+
+    // Handle multiple markdown code block formats
+    // Remove ```json ... ``` blocks
+    cleanText = cleanText
+      .replace(MD_JSON_OPEN_RE, '')
+      .replace(MD_CODE_CLOSE_RE, '');
+    // Remove ``` ... ``` blocks
+    cleanText = cleanText.replace(MD_OPEN_RE, '').replace(MD_CODE_CLOSE_RE, '');
+
+    // Extract JSON object from mixed content
+    // Look for the first { and find its matching }
+    const startIndex = cleanText.indexOf('{');
+    if (startIndex !== -1) {
+      let braceCount = 0;
+      let endIndex = startIndex;
+
+      for (let i = startIndex; i < cleanText.length; i++) {
+        if (cleanText[i] === '{') {
+          braceCount++;
+        }
+        if (cleanText[i] === '}') {
+          braceCount--;
+        }
+        if (braceCount === 0) {
+          endIndex = i;
+          break;
+        }
+      }
+
+      if (braceCount === 0) {
+        cleanText = cleanText.substring(startIndex, endIndex + 1);
+      }
+    }
+
+    const json = JSON.parse(cleanText);
     const parsed = schema.safeParse(json);
     if (parsed.success) {
       return parsed.data as z.infer<TSchema>;
     }
+    // On schema validation failure, return partial valid data merged with defaults
+    const fallbackData = (createFallbackData(schema) ?? {}) as Record<
+      string,
+      unknown
+    >;
+    const mergedData = {
+      ...fallbackData,
+      ...(json as Record<string, unknown>),
+    };
+    const revalidated = schema.safeParse(mergedData);
+    if (revalidated.success) {
+      return revalidated.data as z.infer<TSchema>;
+    }
+    // Return fallback if merge still fails
+    return fallbackData as unknown as z.infer<TSchema>;
+  } catch (_error) {
+    // Return fallback data on any parsing error
+    const fallbackData = createFallbackData(schema);
+    if (fallbackData) {
+      return fallbackData as z.infer<TSchema>;
+    }
+
+    // If all else fails, throw error
+    console.log(
+      `Failed to parse JSON with schema. Original text: ${text.substring(0, 200)}...`
+    );
+    throw new Error('JSON parsing failed');
+  }
+}
+
+function createFallbackData<TSchema extends z.ZodType<unknown>>(
+  schema: TSchema
+): z.infer<TSchema> | null {
+  try {
+    const anySchema = schema as unknown as {
+      _def?: { typeName?: string; shape?: () => Record<string, unknown> };
+    };
+    if (anySchema._def?.typeName === 'ZodObject') {
+      const shape: Record<string, unknown> = anySchema._def?.shape
+        ? (anySchema._def.shape() as Record<string, unknown>)
+        : {};
+      const fallback: Record<string, unknown> = {};
+
+      for (const [key, fieldSchema] of Object.entries(shape)) {
+        fallback[key] = createFallbackValueForSchema(fieldSchema);
+      }
+
+      return fallback as z.infer<TSchema>;
+    }
   } catch {
-    // ignore parse errors and fall through to fallback
+    // If fallback creation fails, return null
   }
 
-  // Log the error and let the calling function handle it
-  console.log(
-    `Failed to parse JSON with schema. Original text: ${text.substring(0, 200)}...`
-  );
-  throw new Error('JSON parsing failed');
+  return null;
+}
+
+function createFallbackValueForSchema(fieldSchema: unknown): unknown {
+  const fieldDef = (fieldSchema as { _def?: ZodInternalDef })?._def as
+    | ZodInternalDef
+    | undefined;
+  const typeName: string | undefined = fieldDef?.typeName;
+  switch (typeName) {
+    case 'ZodString': {
+      return '';
+    }
+    case 'ZodNumber': {
+      return 0;
+    }
+    case 'ZodBoolean': {
+      return false;
+    }
+    case 'ZodArray': {
+      return [];
+    }
+    case 'ZodObject': {
+      if (!fieldDef || typeof fieldDef.shape !== 'function') {
+        return {};
+      }
+      const nestedShape: Record<string, unknown> = fieldDef.shape();
+      const nestedFallback: Record<string, unknown> = {};
+      for (const [nestedKey, nestedSchema] of Object.entries(nestedShape)) {
+        nestedFallback[nestedKey] = createFallbackValueForSchema(nestedSchema);
+      }
+      return nestedFallback;
+    }
+    case 'ZodOptional': {
+      if (
+        fieldDef &&
+        'innerType' in fieldDef &&
+        (fieldDef as ZodInternalDef).innerType
+      ) {
+        return createFallbackValueForSchema(
+          (fieldDef as ZodInternalDef).innerType
+        );
+      }
+      return null;
+    }
+    case 'ZodNullable': {
+      return null;
+    }
+    case 'ZodEnum': {
+      if (
+        fieldDef &&
+        Array.isArray(fieldDef.values) &&
+        fieldDef.values.length > 0
+      ) {
+        return fieldDef.values[0];
+      }
+      return '';
+    }
+    default: {
+      return null;
+    }
+  }
 }
 
 const parseJobTool = createTool({
@@ -67,8 +222,25 @@ const parseJobTool = createTool({
   outputSchema: basicJobDetailsSchema,
   execute: async ({ context }, _options) => {
     try {
-      const result = await jobParserAgent.generate(context.rawText);
-      return parseJsonWithSchema(result.text, basicJobDetailsSchema);
+      const prompt = `Extract structured job details from the text below.
+Return ONLY a JSON object with exactly these keys:
+jobTitle, jobDescription, company, industry, department, jobFunction, location, remotePolicy, postedDate, payRange, benefitsPackage, employmentType, experienceLevel, yearsExperience, educationRequirements, requiredSkills
+
+Rules:
+- remotePolicy must be one of: "remote", "on-site", "hybrid", "not specified"
+- requiredSkills must be an array of strings
+- If a field is not found, use an empty string "" or [] for arrays
+- Do not include any commentary or markdown fences
+
+Text:
+${context.rawText}`;
+
+      const result = await jobParserAgent.generate(prompt);
+      const responseText =
+        typeof result === 'string'
+          ? result
+          : (result?.text ?? String(result ?? ''));
+      return parseJsonWithSchema(responseText, basicJobDetailsSchema);
     } catch (error) {
       console.log('Error in parse job:', error);
       return { company: 'Unknown Company' }; // Return minimal valid object
