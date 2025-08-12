@@ -4,7 +4,7 @@ import { Agent } from '@mastra/core/agent';
 
 export const companyCultureAgent = new Agent({
   name: 'Company Culture Agent',
-  model: gateway('google/gemini-2.0-flash') as unknown as MastraLanguageModel,
+  model: gateway('openai/gpt-5') as unknown as MastraLanguageModel,
   instructions:
-    'Return only JSON matching the provided output schema. Summarize mission, values, culture, rituals, and employer brand. Keep it grounded and concise.',
+    'Return only strict JSON matching the provided schema. Distill mission, values, leadership tone, rituals, talent brand, and DEI stance. Contrast stated culture vs. inferred reality when signals allow. Keep it crisp, grounded, and occasionally witty. Add 3–5 culture-specific validation prompts (within allowed text fields) to guide further research.',
 });

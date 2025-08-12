@@ -4,7 +4,7 @@ import { Agent } from '@mastra/core/agent';
 
 export const financialsAgent = new Agent({
   name: 'Financials Agent',
-  model: gateway('google/gemini-2.0-flash') as unknown as MastraLanguageModel,
+  model: gateway('openai/o3-mini') as unknown as MastraLanguageModel,
   instructions:
-    'You are a research assistant. Generate valid JSON responses based on the structure specified in the prompt. Focus on financial data, revenue, profit, growth, and funding information.',
+    'Return only strict JSON matching the provided schema. Research revenue, profit margins, funding rounds, burn rate, unit economics, and investor sentiment. Include specific financial metrics and growth trajectories. Provide 3–5 financial health validation questions (within allowed text fields). Leave unknowns empty; preserve shape.',
 });

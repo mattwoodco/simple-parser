@@ -4,6 +4,7 @@ import { z } from 'zod';
 import { companyCultureAgent } from '../agents/company-culture-agent';
 import { customerInsightsAgent } from '../agents/customer-insights-agent';
 import { employeeAgent } from '../agents/employee-agent';
+import { finalSummarizerAgent } from '../agents/final-summarizer-agent';
 import { financialsAgent } from '../agents/financials-agent';
 import { hiringManagerAgent } from '../agents/hiring-manager-agent';
 import { jobParserAgent } from '../agents/job-parser-agent';
@@ -333,16 +334,19 @@ const leadershipResearchTool = createTool({
 Return a JSON object with ONLY these fields (no markdown, no explanations):
 {
   "companyName": "string",
-  "ceo": {"name": "string", "background": "string", "tenure": "string", "previousRoles": ["string"]},
-  "executiveTeam": [{"name": "string", "title": "string", "background": "string"}],
-  "boardMembers": [{"name": "string", "title": "string", "background": "string"}],
+  "ceo": {"name": "string", "background": "string", "recentQuotes": ["string"], "socialMedia": ["string"], "linkedinUrl": "string", "pdlId": "string"},
+  "executiveTeam": [{"name": "string", "role": "string", "background": "string", "expertise": ["string"], "linkedinUrl": "string", "pdlId": "string"}],
+  "boardMembers": [{"name": "string", "role": "string", "otherPositions": ["string"]}],
   "leadershipStyle": "string",
   "strategicVision": "string",
   "recentDecisions": ["string"],
   "industryRecognition": ["string"],
-  "leadershipChanges": [{"role": "string", "previous": "string", "new": "string", "date": "string"}]
+  "leadershipChanges": ["string"],
+  "dataSource": "string",
+  "lastUpdated": "string",
+  "profileCount": number
 }
-If data is unavailable, use empty arrays [], empty strings "", or null.`;
+Ensure all executiveTeam members have a "role" field. If data is unavailable, use empty arrays [], empty strings "", null for optional fields, or 0 for numbers.`;
 
       const result = await leadershipAgent.generate(prompt);
       return parseJsonWithSchema(result.text, leadershipResearchSchema);
@@ -402,14 +406,20 @@ const socialMediaResearchTool = createTool({
 Return a JSON object with ONLY these fields (no markdown, no explanations):
 {
   "companyName": "string",
-  "platforms": [{"name": "string", "url": "string", "followers": "string", "engagement": "string"}],
-  "recentPosts": [{"platform": "string", "content": "string", "date": "string", "engagement": "string"}],
-  "sentiment": "string",
-  "brandVoice": "string",
-  "contentThemes": ["string"],
-  "influencerMentions": [{"name": "string", "platform": "string", "context": "string"}]
+  "companyPosts": [{"platform": "string", "content": "string", "date": "string", "engagement": {"likes": number, "shares": number, "comments": number}, "type": "string"}],
+  "ceoActivity": [{"platform": "string", "content": "string", "date": "string", "engagement": {"likes": number, "shares": number, "comments": number}, "topic": "string"}],
+  "engagement": {"totalFollowers": number, "averageLikes": number, "engagementRate": "string", "growthRate": "string"},
+  "platforms": [{"name": "string", "followers": number, "verified": boolean, "activity": "string"}],
+  "followers": {"total": number, "demographics": {"primaryAgeGroup": "string", "primaryLocation": "string", "interests": ["string"]}},
+  "recentCampaigns": [{"name": "string", "platform": "string", "startDate": "string", "endDate": "string", "reach": number, "outcome": "string"}],
+  "xComData": {"handle": "string", "followers": number, "verified": boolean, "recentTweets": [{"content": "string", "date": "string", "engagement": {"likes": number, "retweets": number, "replies": number}, "topic": "string"}], "trendingTopics": ["string"], "brandMentions": number},
+  "instagramData": {"handle": "string", "followers": number, "verified": boolean, "recentPosts": [{"content": "string", "date": "string", "engagement": {"likes": number, "comments": number, "shares": number}, "type": "string"}], "stories": [{"content": "string", "date": "string", "views": number}], "hashtags": ["string"]},
+  "youtubeData": {"channelName": "string", "subscribers": number, "verified": boolean, "recentVideos": [{"title": "string", "date": "string", "views": number, "engagement": {"likes": number, "comments": number, "shares": number}, "duration": "string", "topic": "string"}], "totalViews": number, "uploadFrequency": "string"},
+  "dataSource": "string",
+  "lastUpdated": "string",
+  "profileCount": number
 }
-If data is unavailable, use empty arrays [] or empty strings "".`;
+Use numbers for follower counts, engagement metrics, and view counts. Use boolean true/false for verified status. If data is unavailable, use 0 for numbers, empty arrays [] for arrays, empty strings "" for strings, and false for booleans.`;
 
       const result = await socialMediaAgent.generate(prompt);
       return parseJsonWithSchema(result.text, socialMediaResearchSchema);
@@ -435,12 +445,15 @@ const employeeResearchTool = createTool({
 Return a JSON object with ONLY these fields (no markdown, no explanations):
 {
   "companyName": "string",
-  "glassdoorRating": {"overallRating": number, "ceoApproval": number, "recommendToFriend": number, "totalReviews": number},
-  "benefits": {"healthInsurance": "string", "retirement": "string", "paidTimeOff": "string", "parentalLeave": "string"},
-  "workLifeBalance": {"rating": number, "averageHours": "string", "remotePolicy": "string", "flexibility": "string"},
-  "diversityData": {"womenInWorkforce": "string", "womenInLeadership": "string", "ethnicDiversity": "string"},
-  "employeePosts": [{"platform": "string", "content": "string", "sentiment": "string"}],
-  "reviews": [{"title": "string", "pros": "string", "cons": "string", "rating": number}]
+  "glassdoorRating": {"overallRating": number, "ceoApproval": number, "recommendToFriend": number, "totalReviews": number, "salaryTransparency": "string"},
+  "benefits": {"healthInsurance": "string", "retirement": "string", "paidTimeOff": "string", "parentalLeave": "string", "learningAndDevelopment": "string", "flexibleWork": "string"},
+  "workLifeBalance": {"rating": number, "averageHours": "string", "remotePolicy": "string", "flexibility": "string", "stressLevel": "string"},
+  "diversityData": {"womenInWorkforce": "string", "womenInLeadership": "string", "ethnicDiversity": "string", "inclusionScore": number, "diversityInitiatives": ["string"]},
+  "employeePosts": [{"platform": "string", "author": "string", "role": "string", "content": "string", "date": "string", "sentiment": "string"}],
+  "reviews": [{"title": "string", "rating": number, "pros": "string", "cons": "string", "advice": "string", "role": "string", "tenure": "string", "date": "string"}],
+  "dataSource": "string",
+  "lastUpdated": "string",
+  "profileCount": number
 }
 If data is unavailable, use empty arrays [], empty strings "", or 0 for numbers.`;
 
@@ -469,14 +482,16 @@ Return a JSON object with ONLY these fields (no markdown, no explanations):
 {
   "companyName": "string",
   "techStack": {"frontend": ["string"], "backend": ["string"], "databases": ["string"], "cloud": ["string"], "devops": ["string"], "monitoring": ["string"]},
-  "products": [{"name": "string", "description": "string", "category": "string"}],
-  "apis": {"public": [{"name": "string", "description": "string"}], "internal": []},
-  "openSource": [{"name": "string", "url": "string", "stars": "string"}],
-  "patents": [{"title": "string", "date": "string", "description": "string"}],
+  "products": [{"name": "string", "description": "string", "technology": ["string"], "status": "string", "launchDate": "string"}],
+  "apis": {"public": [{"name": "string", "version": "string", "documentation": "string", "usage": "string"}], "internal": ["string"]},
+  "openSource": [{"project": "string", "language": "string", "stars": number, "description": "string", "lastUpdated": "string"}],
+  "patents": [{"title": "string", "number": "string", "filed": "string", "status": "string", "category": "string"}],
   "roadmap": {"shortTerm": ["string"], "longTerm": ["string"], "researchAreas": ["string"]},
-  "architecture": {"style": "string", "scalability": "string", "security": "string", "performance": "string", "reliability": "string"}
+  "architecture": {"style": "string", "scalability": "string", "security": "string", "performance": "string", "reliability": "string"},
+  "dataSource": "string",
+  "lastUpdated": "string"
 }
-If data is unavailable, use empty arrays [], empty strings "".`;
+If data is unavailable, use empty arrays [], empty strings "", or 0 for numbers.`;
 
       const result = await technologyAgent.generate(prompt);
       return parseJsonWithSchema(result.text, technologyResearchSchema);
@@ -504,12 +519,15 @@ Return a JSON object with ONLY these fields (no markdown, no explanations):
   "companyName": "string",
   "marketPosition": {"rank": "string", "category": "string", "marketSize": "string", "growth": "string", "differentiation": "string"},
   "competitors": [{"name": "string", "marketShare": "string", "strengths": ["string"], "weaknesses": ["string"], "positioning": "string"}],
-  "marketShare": {"current": "string", "trend": "string", "segments": [{"name": "string", "share": "string"}]},
+  "marketShare": {"current": "string", "trend": "string", "segments": [{"segment": "string", "growth": "string"}]},
   "industryTrends": ["string"],
   "threats": ["string"],
-  "opportunities": ["string"]
+  "opportunities": ["string"],
+  "dataSource": "string",
+  "lastUpdated": "string",
+  "profileCount": number
 }
-If data is unavailable, use empty arrays [], empty strings "".`;
+Ensure each segment in marketShare.segments has both "segment" and "growth" fields. If data is unavailable, use empty arrays [], empty strings "", or 0 for numbers.`;
 
       const result = await marketAgent.generate(prompt);
       return parseJsonWithSchema(result.text, marketResearchSchema);
@@ -717,7 +735,7 @@ Be specific and practical in all recommendations.
 
 Return only JSON. Do not include any text outside the JSON object.`;
 
-      const result = await synthesizeAgent.generate(prompt);
+      const result = await finalSummarizerAgent.generate(prompt);
       return parseJsonWithSchema(
         result.text,
         jobApplicationWorkflowOutputSchema
