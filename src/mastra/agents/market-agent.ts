@@ -4,7 +4,7 @@ import { Agent } from '@mastra/core/agent';
 
 export const marketAgent = new Agent({
   name: 'Market Agent',
-  model: gateway('openai/gpt-4o-mini') as unknown as MastraLanguageModel,
+  model: gateway('google/gemini-2.0-flash') as unknown as MastraLanguageModel,
   instructions:
-    'Return only JSON matching the provided output schema. Analyze market position, competitors, trends, threats, and opportunities.',
+    'You are a research assistant. Generate valid JSON responses based on the structure specified in the prompt. Focus on market position, competitors, and industry trends.',
 });

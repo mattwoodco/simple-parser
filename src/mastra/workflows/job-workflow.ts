@@ -58,6 +58,7 @@ function parseJsonWithSchema<TSchema extends z.ZodType<unknown>>(
   text: string,
   schema: TSchema
 ): z.infer<TSchema> {
+  console.log('[parseJsonWithSchema] raw input:', text.substring(0, 300));
   try {
     let cleanText = text.trim();
 
@@ -95,23 +96,48 @@ function parseJsonWithSchema<TSchema extends z.ZodType<unknown>>(
     }
 
     const json = JSON.parse(cleanText);
+    console.log(
+      '[parseJsonWithSchema] parsed JSON:',
+      JSON.stringify(json).substring(0, 200)
+    );
+
     const parsed = schema.safeParse(json);
     if (parsed.success) {
+      console.log('[parseJsonWithSchema] ✅ Schema validation successful');
       return parsed.data as z.infer<TSchema>;
     }
+
+    // Log validation errors
+    console.log('[parseJsonWithSchema] ❌ Schema validation failed:', {
+      errors: parsed.error?.errors?.slice(0, 5).map((e) => ({
+        path: e.path.join('.'),
+        message: e.message,
+        code: e.code,
+      })),
+    });
+
     // On schema validation failure, return partial valid data merged with defaults
     const fallbackData = (createFallbackData(schema) ?? {}) as Record<
       string,
       unknown
     >;
+    console.log('[parseJsonWithSchema] Using fallback data');
+
     const mergedData = {
       ...fallbackData,
       ...(json as Record<string, unknown>),
     };
     const revalidated = schema.safeParse(mergedData);
     if (revalidated.success) {
+      console.log(
+        '[parseJsonWithSchema] ✅ Revalidation with fallback successful'
+      );
       return revalidated.data as z.infer<TSchema>;
     }
+
+    console.log(
+      '[parseJsonWithSchema] ❌ Revalidation failed, returning pure fallback'
+    );
     // Return fallback if merge still fails
     return fallbackData as unknown as z.infer<TSchema>;
   } catch (_error) {
@@ -259,7 +285,31 @@ const newsResearchTool = createTool({
     try {
       const companyName = context.company || 'Unknown Company';
       console.log('🚀 ~ companyName:', companyName);
-      const result = await newsAgent.generate(companyName);
+
+      const prompt = `Research recent news about ${companyName}. 
+Return a JSON object with ONLY these fields (no markdown, no explanations):
+{
+  "companyName": "string",
+  "recentArticles": [{"title": "string", "source": "string", "date": "string", "sentiment": "string", "summary": "string"}],
+  "pressReleases": [{"title": "string", "date": "string", "category": "string", "summary": "string"}],
+  "awards": [{"award": "string", "organization": "string", "date": "string", "category": "string"}],
+  "mediaAppearances": [{"person": "string", "event": "string", "date": "string", "topic": "string"}],
+  "industryMentions": [{"publication": "string", "context": "string", "date": "string", "relevance": "string"}],
+  "sentiment": {"overall": "string", "mediaScore": 0, "trendDirection": "string", "keyThemes": ["string"]}
+}
+If data is unavailable, use empty arrays [] or empty strings "".`;
+
+      console.log('[News Research] Sending prompt:', prompt.substring(0, 200));
+      const result = await newsAgent.generate(prompt);
+      console.log('[News Research] Agent result type:', typeof result);
+      console.log(
+        '[News Research] Agent result keys:',
+        result ? Object.keys(result) : 'null'
+      );
+      console.log(
+        '[News Research] Agent response text:',
+        result?.text?.substring(0, 500) || 'No text in response'
+      );
       return parseJsonWithSchema(result.text, newsSchema);
     } catch (error) {
       console.log('Error in news research:', error);
@@ -278,7 +328,23 @@ const leadershipResearchTool = createTool({
   execute: async ({ context }, _options) => {
     try {
       const companyName = context.company || 'Unknown Company';
-      const result = await leadershipAgent.generate(companyName);
+
+      const prompt = `Research leadership information about ${companyName}.
+Return a JSON object with ONLY these fields (no markdown, no explanations):
+{
+  "companyName": "string",
+  "ceo": {"name": "string", "background": "string", "tenure": "string", "previousRoles": ["string"]},
+  "executiveTeam": [{"name": "string", "title": "string", "background": "string"}],
+  "boardMembers": [{"name": "string", "title": "string", "background": "string"}],
+  "leadershipStyle": "string",
+  "strategicVision": "string",
+  "recentDecisions": ["string"],
+  "industryRecognition": ["string"],
+  "leadershipChanges": [{"role": "string", "previous": "string", "new": "string", "date": "string"}]
+}
+If data is unavailable, use empty arrays [], empty strings "", or null.`;
+
+      const result = await leadershipAgent.generate(prompt);
       return parseJsonWithSchema(result.text, leadershipResearchSchema);
     } catch (error) {
       console.log('Error in leadership research:', error);
@@ -297,7 +363,22 @@ const financialResearchTool = createTool({
   execute: async ({ context }, _options) => {
     try {
       const companyName = context.company || 'Unknown Company';
-      const result = await financialsAgent.generate(companyName);
+
+      const prompt = `Research financial information about ${companyName}.
+Return a JSON object with ONLY these fields (no markdown, no explanations):
+{
+  "companyName": "string",
+  "earnings": {"revenue": "string", "profit": "string", "growth": "string", "lastReported": "string"},
+  "funding": {"totalRaised": "string", "lastRound": "string", "investors": ["string"], "valuation": "string"},
+  "stockPrice": {"current": "string", "change": "string", "marketCap": "string", "exchange": "string"},
+  "financialHealth": {"rating": "string", "cashFlow": "string", "debt": "string", "profitability": "string"},
+  "acquisitions": ["string"],
+  "financialNews": ["string"],
+  "investorRelations": ["string"]
+}
+If data is unavailable, use empty arrays [], empty strings "", or null for stockPrice.`;
+
+      const result = await financialsAgent.generate(prompt);
       return parseJsonWithSchema(result.text, financialResearchSchema);
     } catch (error) {
       console.log('Error in financial research:', error);
@@ -316,7 +397,21 @@ const socialMediaResearchTool = createTool({
   execute: async ({ context }, _options) => {
     try {
       const companyName = context.company || 'Unknown Company';
-      const result = await socialMediaAgent.generate(companyName);
+
+      const prompt = `Research social media presence for ${companyName}.
+Return a JSON object with ONLY these fields (no markdown, no explanations):
+{
+  "companyName": "string",
+  "platforms": [{"name": "string", "url": "string", "followers": "string", "engagement": "string"}],
+  "recentPosts": [{"platform": "string", "content": "string", "date": "string", "engagement": "string"}],
+  "sentiment": "string",
+  "brandVoice": "string",
+  "contentThemes": ["string"],
+  "influencerMentions": [{"name": "string", "platform": "string", "context": "string"}]
+}
+If data is unavailable, use empty arrays [] or empty strings "".`;
+
+      const result = await socialMediaAgent.generate(prompt);
       return parseJsonWithSchema(result.text, socialMediaResearchSchema);
     } catch (error) {
       console.log('Error in social media research:', error);
@@ -335,7 +430,21 @@ const employeeResearchTool = createTool({
   execute: async ({ context }, _options) => {
     try {
       const companyName = context.company || 'Unknown Company';
-      const result = await employeeAgent.generate(companyName);
+
+      const prompt = `Research employee information about ${companyName}.
+Return a JSON object with ONLY these fields (no markdown, no explanations):
+{
+  "companyName": "string",
+  "glassdoorRating": {"overallRating": number, "ceoApproval": number, "recommendToFriend": number, "totalReviews": number},
+  "benefits": {"healthInsurance": "string", "retirement": "string", "paidTimeOff": "string", "parentalLeave": "string"},
+  "workLifeBalance": {"rating": number, "averageHours": "string", "remotePolicy": "string", "flexibility": "string"},
+  "diversityData": {"womenInWorkforce": "string", "womenInLeadership": "string", "ethnicDiversity": "string"},
+  "employeePosts": [{"platform": "string", "content": "string", "sentiment": "string"}],
+  "reviews": [{"title": "string", "pros": "string", "cons": "string", "rating": number}]
+}
+If data is unavailable, use empty arrays [], empty strings "", or 0 for numbers.`;
+
+      const result = await employeeAgent.generate(prompt);
       return parseJsonWithSchema(result.text, employeeResearchSchema);
     } catch (error) {
       console.log('Error in employee research:', error);
@@ -354,7 +463,22 @@ const technologyResearchTool = createTool({
   execute: async ({ context }, _options) => {
     try {
       const companyName = context.company || 'Unknown Company';
-      const result = await technologyAgent.generate(companyName);
+
+      const prompt = `Research technology stack and products for ${companyName}.
+Return a JSON object with ONLY these fields (no markdown, no explanations):
+{
+  "companyName": "string",
+  "techStack": {"frontend": ["string"], "backend": ["string"], "databases": ["string"], "cloud": ["string"], "devops": ["string"], "monitoring": ["string"]},
+  "products": [{"name": "string", "description": "string", "category": "string"}],
+  "apis": {"public": [{"name": "string", "description": "string"}], "internal": []},
+  "openSource": [{"name": "string", "url": "string", "stars": "string"}],
+  "patents": [{"title": "string", "date": "string", "description": "string"}],
+  "roadmap": {"shortTerm": ["string"], "longTerm": ["string"], "researchAreas": ["string"]},
+  "architecture": {"style": "string", "scalability": "string", "security": "string", "performance": "string", "reliability": "string"}
+}
+If data is unavailable, use empty arrays [], empty strings "".`;
+
+      const result = await technologyAgent.generate(prompt);
       return parseJsonWithSchema(result.text, technologyResearchSchema);
     } catch (error) {
       console.log('Error in technology research:', error);
@@ -373,7 +497,21 @@ const marketResearchTool = createTool({
   execute: async ({ context }, _options) => {
     try {
       const companyName = context.company || 'Unknown Company';
-      const result = await marketAgent.generate(companyName);
+
+      const prompt = `Research market position and competitive landscape for ${companyName}.
+Return a JSON object with ONLY these fields (no markdown, no explanations):
+{
+  "companyName": "string",
+  "marketPosition": {"rank": "string", "category": "string", "marketSize": "string", "growth": "string", "differentiation": "string"},
+  "competitors": [{"name": "string", "marketShare": "string", "strengths": ["string"], "weaknesses": ["string"], "positioning": "string"}],
+  "marketShare": {"current": "string", "trend": "string", "segments": [{"name": "string", "share": "string"}]},
+  "industryTrends": ["string"],
+  "threats": ["string"],
+  "opportunities": ["string"]
+}
+If data is unavailable, use empty arrays [], empty strings "".`;
+
+      const result = await marketAgent.generate(prompt);
       return parseJsonWithSchema(result.text, marketResearchSchema);
     } catch (error) {
       console.log('Error in market research:', error);

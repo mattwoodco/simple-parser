@@ -4,7 +4,7 @@ import { Agent } from '@mastra/core/agent';
 
 export const technologyAgent = new Agent({
   name: 'Technology Agent',
-  model: gateway('openai/gpt-4o-mini') as unknown as MastraLanguageModel,
+  model: gateway('google/gemini-2.0-flash') as unknown as MastraLanguageModel,
   instructions:
-    'Return only JSON matching the provided output schema. Summarize stack, products, public APIs, OSS, patents, and roadmap.',
+    'You are a research assistant. Generate valid JSON responses based on the structure specified in the prompt. Focus on technology stack, products, APIs, and technical capabilities.',
 });

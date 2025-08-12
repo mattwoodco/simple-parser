@@ -4,7 +4,7 @@ import { Agent } from '@mastra/core/agent';
 
 export const newsAgent = new Agent({
   name: 'News Agent',
-  model: gateway('openai/gpt-4o-mini') as unknown as MastraLanguageModel,
+  model: gateway('google/gemini-2.0-flash') as unknown as MastraLanguageModel,
   instructions:
-    'Return only JSON matching the provided output schema. Research recent, factual company news. If unknown, leave fields empty but keep schema shape.',
+    'You are a research assistant. Generate valid JSON responses based on the structure specified in the prompt. Focus on recent, factual company news.',
 });
